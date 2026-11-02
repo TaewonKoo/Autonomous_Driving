@@ -1,0 +1,507 @@
+{
+  "seconds": 1800,
+  "ego_arrival_seconds": 133.4,
+  "selected_ego_route": "outermost",
+  "ego_followed_requested_loop": true,
+  "vehicles_departed": 379,
+  "vehicles_arrived": 355,
+  "background_arrived": 354,
+  "teleports": 0,
+  "collision_vehicle_events": 0,
+  "traffic_routes_configured": 42,
+  "traffic_routes_departed": 42,
+  "traffic_routes_completed": 42,
+  "school_zone_limit_kmh": 30,
+  "school_zone_control_target_kmh": 28.5,
+  "school_zone_observed_max_kmh": 28.512,
+  "school_zone_vehicle_step_samples": 10945,
+  "school_zone_max_kmh_by_edge": {
+    "school_approach": 28.437,
+    "west_bank": 28.486,
+    "west_lower": 28.512,
+    "west_lower_rev": 28.487,
+    "west_bank_rev": 28.478,
+    "school_approach_rev": 28.5
+  },
+  "school_zone_samples_by_edge": {
+    "school_approach": 975,
+    "west_bank": 1488,
+    "west_lower": 3703,
+    "west_lower_rev": 2825,
+    "west_bank_rev": 1171,
+    "school_approach_rev": 783
+  },
+  "straight_only_passages": {
+    "triangle_top_rev": 9,
+    "triangle_east_upper_rev": 44,
+    "triangle_east_leg_rev": 18,
+    "triangle_west_leg": 67,
+    "main_sweep_rev": 18
+  },
+  "right_only_passages": {
+    "minor_west_rev": 27
+  },
+  "forbidden_turns_observed": [],
+  "feature_vehicles_observed": {
+    "south_straight": 132,
+    "roundabout_south_widening": 78,
+    "south_connector": 79,
+    "southern_coast": 105,
+    "coast_northbound_narrowing": 46,
+    "main_curve": 62,
+    "minor_west": 62,
+    "minor_coast": 96,
+    "east_signal_turn_pocket": 44,
+    "east_left_signal": 18,
+    "east_right_yield": 26,
+    "small_merge": 124,
+    "merge_diagonal": 77,
+    "merge_top_one_way": 9,
+    "merge_lower_right_one_way": 19,
+    "triangle_southbound_two_lanes": 77
+  },
+  "vehicles_observed_stopped_at_red": {
+    "signal_bank": 4,
+    "signal_east": 40,
+    "signal_godeungeo": 29,
+    "signal_south": 70
+  },
+  "school_north_entries": [
+    {
+      "vehicle": "ego",
+      "approach_peak_kmh": 24.418,
+      "school_entry_kmh": 25.404
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.0",
+      "approach_peak_kmh": 26.461,
+      "school_entry_kmh": 26.179
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.0",
+      "approach_peak_kmh": 25.791,
+      "school_entry_kmh": 25.432
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.0",
+      "approach_peak_kmh": 25.319,
+      "school_entry_kmh": 24.955
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.0",
+      "approach_peak_kmh": 23.334,
+      "school_entry_kmh": 22.989
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.0",
+      "approach_peak_kmh": 23.088,
+      "school_entry_kmh": 23.168
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.0",
+      "approach_peak_kmh": 26.075,
+      "school_entry_kmh": 26.122
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.0",
+      "approach_peak_kmh": 24.773,
+      "school_entry_kmh": 22.95
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.0",
+      "approach_peak_kmh": 23.053,
+      "school_entry_kmh": 23.077
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.0",
+      "approach_peak_kmh": 29.306,
+      "school_entry_kmh": 24.371
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.1",
+      "approach_peak_kmh": 27.233,
+      "school_entry_kmh": 27.165
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.1",
+      "approach_peak_kmh": 25.984,
+      "school_entry_kmh": 26.047
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.1",
+      "approach_peak_kmh": 25.58,
+      "school_entry_kmh": 24.884
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.1",
+      "approach_peak_kmh": 25.237,
+      "school_entry_kmh": 25.544
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.1",
+      "approach_peak_kmh": 25.893,
+      "school_entry_kmh": 25.821
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.1",
+      "approach_peak_kmh": 24.77,
+      "school_entry_kmh": 24.115
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.1",
+      "approach_peak_kmh": 23.35,
+      "school_entry_kmh": 23.051
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.1",
+      "approach_peak_kmh": 26.125,
+      "school_entry_kmh": 22.944
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.1",
+      "approach_peak_kmh": 30.006,
+      "school_entry_kmh": 26.666
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.2",
+      "approach_peak_kmh": 27.67,
+      "school_entry_kmh": 27.588
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.2",
+      "approach_peak_kmh": 24.787,
+      "school_entry_kmh": 25.107
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.2",
+      "approach_peak_kmh": 22.087,
+      "school_entry_kmh": 21.904
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.2",
+      "approach_peak_kmh": 21.929,
+      "school_entry_kmh": 21.875
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.2",
+      "approach_peak_kmh": 21.189,
+      "school_entry_kmh": 21.265
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.2",
+      "approach_peak_kmh": 21.638,
+      "school_entry_kmh": 21.512
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.2",
+      "approach_peak_kmh": 23.472,
+      "school_entry_kmh": 22.07
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.2",
+      "approach_peak_kmh": 22.319,
+      "school_entry_kmh": 21.97
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.2",
+      "approach_peak_kmh": 31.407,
+      "school_entry_kmh": 25.095
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.3",
+      "approach_peak_kmh": 26.344,
+      "school_entry_kmh": 25.831
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.3",
+      "approach_peak_kmh": 25.635,
+      "school_entry_kmh": 25.701
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.3",
+      "approach_peak_kmh": 24.857,
+      "school_entry_kmh": 24.857
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.3",
+      "approach_peak_kmh": 22.997,
+      "school_entry_kmh": 22.391
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.3",
+      "approach_peak_kmh": 21.867,
+      "school_entry_kmh": 21.499
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.3",
+      "approach_peak_kmh": 21.912,
+      "school_entry_kmh": 21.868
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.3",
+      "approach_peak_kmh": 22.089,
+      "school_entry_kmh": 20.672
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.3",
+      "approach_peak_kmh": 25.146,
+      "school_entry_kmh": 23.674
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.3",
+      "approach_peak_kmh": 31.06,
+      "school_entry_kmh": 23.324
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.4",
+      "approach_peak_kmh": 26.097,
+      "school_entry_kmh": 26.097
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.4",
+      "approach_peak_kmh": 25.447,
+      "school_entry_kmh": 25.576
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.4",
+      "approach_peak_kmh": 22.501,
+      "school_entry_kmh": 21.83
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.4",
+      "approach_peak_kmh": 21.5,
+      "school_entry_kmh": 21.286
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.4",
+      "approach_peak_kmh": 21.774,
+      "school_entry_kmh": 21.393
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.4",
+      "approach_peak_kmh": 21.778,
+      "school_entry_kmh": 20.961
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.4",
+      "approach_peak_kmh": 21.561,
+      "school_entry_kmh": 20.092
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.4",
+      "approach_peak_kmh": 19.87,
+      "school_entry_kmh": 14.828
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.4",
+      "approach_peak_kmh": 31.087,
+      "school_entry_kmh": 20.765
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.5",
+      "approach_peak_kmh": 24.585,
+      "school_entry_kmh": 24.397
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.5",
+      "approach_peak_kmh": 21.848,
+      "school_entry_kmh": 21.741
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.5",
+      "approach_peak_kmh": 22.031,
+      "school_entry_kmh": 21.695
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.5",
+      "approach_peak_kmh": 22.114,
+      "school_entry_kmh": 21.853
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.5",
+      "approach_peak_kmh": 22.8,
+      "school_entry_kmh": 22.64
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.5",
+      "approach_peak_kmh": 25.738,
+      "school_entry_kmh": 25.151
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.5",
+      "approach_peak_kmh": 23.7,
+      "school_entry_kmh": 22.808
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.5",
+      "approach_peak_kmh": 21.884,
+      "school_entry_kmh": 21.15
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.5",
+      "approach_peak_kmh": 30.251,
+      "school_entry_kmh": 20.938
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.6",
+      "approach_peak_kmh": 26.187,
+      "school_entry_kmh": 26.029
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.6",
+      "approach_peak_kmh": 25.758,
+      "school_entry_kmh": 25.438
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.6",
+      "approach_peak_kmh": 25.229,
+      "school_entry_kmh": 25.386
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.6",
+      "approach_peak_kmh": 25.097,
+      "school_entry_kmh": 24.41
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.6",
+      "approach_peak_kmh": 23.924,
+      "school_entry_kmh": 23.924
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.6",
+      "approach_peak_kmh": 26.499,
+      "school_entry_kmh": 26.589
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.6",
+      "approach_peak_kmh": 24.792,
+      "school_entry_kmh": 24.478
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.6",
+      "approach_peak_kmh": 25.624,
+      "school_entry_kmh": 22.77
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.6",
+      "approach_peak_kmh": 26.897,
+      "school_entry_kmh": 26.813
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.7",
+      "approach_peak_kmh": 25.413,
+      "school_entry_kmh": 25.649
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.7",
+      "approach_peak_kmh": 22.802,
+      "school_entry_kmh": 22.635
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.7",
+      "approach_peak_kmh": 22.548,
+      "school_entry_kmh": 22.212
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.7",
+      "approach_peak_kmh": 23.208,
+      "school_entry_kmh": 23.378
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.7",
+      "approach_peak_kmh": 23.546,
+      "school_entry_kmh": 23.563
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.7",
+      "approach_peak_kmh": 23.643,
+      "school_entry_kmh": 23.675
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.7",
+      "approach_peak_kmh": 23.222,
+      "school_entry_kmh": 20.676
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.7",
+      "approach_peak_kmh": 20.795,
+      "school_entry_kmh": 20.777
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.7",
+      "approach_peak_kmh": 26.422,
+      "school_entry_kmh": 26.422
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_sw.8",
+      "approach_peak_kmh": 24.395,
+      "school_entry_kmh": 23.92
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south.8",
+      "approach_peak_kmh": 23.845,
+      "school_entry_kmh": 23.845
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_se.8",
+      "approach_peak_kmh": 23.221,
+      "school_entry_kmh": 23.412
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_ne.8",
+      "approach_peak_kmh": 22.509,
+      "school_entry_kmh": 22.289
+    },
+    {
+      "vehicle": "flow_port_nw_to_port_south_west.8",
+      "approach_peak_kmh": 20.26,
+      "school_entry_kmh": 20.123
+    },
+    {
+      "vehicle": "flow_port_north_to_port_sw.8",
+      "approach_peak_kmh": 20.335,
+      "school_entry_kmh": 20.122
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south.8",
+      "approach_peak_kmh": 20.347,
+      "school_entry_kmh": 20.339
+    },
+    {
+      "vehicle": "flow_port_north_to_port_se.8",
+      "approach_peak_kmh": 22.596,
+      "school_entry_kmh": 20.235
+    },
+    {
+      "vehicle": "flow_port_north_to_port_south_west.8",
+      "approach_peak_kmh": 29.725,
+      "school_entry_kmh": 23.187
+    }
+  ],
+  "visited_ego_edges": [
+    "start_south",
+    "school_approach",
+    "west_bank",
+    "west_lower",
+    "ring_0",
+    "ring_1",
+    "south_rb_approach",
+    "south_straight",
+    "south_connector",
+    "coast_south_rev",
+    "coast_merge_approach_rev",
+    "triangle_east_leg_rev",
+    "triangle_east_upper_rev",
+    "minor_coast_rev",
+    "east_turn_pocket_rev",
+    "east_right_slip",
+    "godeungeo_road",
+    "godeungeo_approach",
+    "coast_turn",
+    "coast_north",
+    "north_return",
+    "northwest_return",
+    "hamabo_return",
+    "start_south"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "surface_valid": true,
+  "asphalt_area_error_m2": 0.0,
+  "white_boundary_outside_shared_geometry_m": 0.0,
+  "island_centerline_clearances_m": {
+    "upper": 1.8893369222705179,
+    "lower": 1.6617264303029058,
+    "entry": 1.7173539945840903
+  },
+  "lane_coverage": {
+    "lanes_checked": 266,
+    "max_missing_lane_area_m2": 0,
+    "boundary_tolerance_m": 0.03
+  },
+  "straight_streets": [
+    "coast_merge_approach",
+    "coast_south",
+    "east_turn_pocket",
+    "godeungeo_approach",
+    "godeungeo_road",
+    "minor_coast",
+    "minor_west"
+  ],
+  "signal_approach_length_m": 6.07,
+  "curve_step_m": 3
+}

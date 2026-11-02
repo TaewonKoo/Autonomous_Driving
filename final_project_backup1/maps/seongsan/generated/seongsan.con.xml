@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<connections>
+  <delete from="inner_join_rev" to="cross_link" />
+  <connection from="inner_join_rev" to="inner_east_rev" fromLane="0" toLane="0" />
+</connections>

@@ -1,0 +1,36 @@
+Loading net-file from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261027_221322\network\generated\seongsan.net.xml' ... done (9ms).
+Loading additional-files from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261027_221322\network\generated\seongsan.add.xml' ... done (1ms).
+Loading route-files incrementally from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261027_221322\network\generated\seongsan.rou.xml'
+Loading done.
+Simulation version 1.27.1 started with time: 0.00.
+Simulation ended at time: 5400.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 1.90s
+ Real time factor: 2840.61
+ UPS: 242094.687007
+Vehicles:
+ Inserted: 714
+ Running: 0
+ Waiting: 0
+ Emergency Braking: 12
+Statistics (avg of 714):
+ RouteLength: 667.74
+ Speed: 5.53
+ Duration: 128.91
+ WaitingTime: 21.91
+ TimeLoss: 44.25
+ DepartDelay: 4.93
+ DepartDelayWaiting: 0.00
+Warning: Vehicle 'flow_port_ne_to_port_west.0' performs emergency braking on lane 'inner_join_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=39.20.
+Warning: Vehicle 'flow_port_ne_to_port_south.1' performs emergency braking on lane 'inner_join_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=309.00.
+Warning: Vehicle 'flow_port_south_to_port_sw.2' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=453.20.
+Warning: Vehicle 'flow_port_se_to_port_nw.5' performs emergency braking on lane 'cross_link_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=1142.00.
+Warning: Vehicle 'flow_port_south_to_port_west.6' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=1315.40.
+Warning: Vehicle 'flow_port_ne_to_port_south.8' performs emergency braking on lane 'boundary_ne_0' with decel=9.00, wished=4.50, severity=1.00, time=1750.00.
+Warning: Vehicle 'flow_port_south_to_port_ne.8' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=1759.60.
+Warning: Vehicle 'flow_port_se_to_port_nw.9' performs emergency braking on lane 'cross_link_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=2042.00.
+Warning: Vehicle 'flow_port_se_to_port_nw.10' performs emergency braking on lane 'cross_link_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=2222.00.
+Warning: Vehicle 'flow_port_south_to_port_sw.13' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=2828.20.
+Warning: Vehicle 'flow_port_se_to_port_north.16' performs emergency braking on lane 'boundary_se_1' with decel=9.00, wished=4.50, severity=1.00, time=3482.00.
+Warning: Vehicle 'flow_port_ne_to_port_south.16' performs emergency braking on lane 'inner_join_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=3549.00.

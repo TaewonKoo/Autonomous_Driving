@@ -1,0 +1,643 @@
+{
+  "scale_m_per_pixel_calibrated": 0.543344,
+  "laps": 1,
+  "ego_included": false,
+  "calibration": {
+    "source": "User approximate distance, not a survey",
+    "from": "roundabout east exit",
+    "to": "northbound left-turn entry",
+    "reference_edges": [
+      "eomeong_road",
+      "east_sweep",
+      "east_main",
+      "godeungeo_road",
+      "godeungeo_approach"
+    ],
+    "target_m": 600,
+    "actual_lane0_m_including_junctions": 600.0
+  },
+  "ego_edges": [
+    "start_south",
+    "school_approach",
+    "west_bank",
+    "west_lower",
+    "roundabout_approach",
+    "ring_0",
+    "ring_1",
+    "ring_2",
+    "eomeong_road",
+    "east_sweep",
+    "east_main",
+    "godeungeo_road",
+    "godeungeo_approach",
+    "coast_turn",
+    "coast_north",
+    "north_return",
+    "northwest_return",
+    "hamabo_return",
+    "start_south"
+  ],
+  "ego_depart_arrival_position": 10,
+  "loop_length_m": 1684.7,
+  "ports": [
+    "port_north",
+    "port_nw",
+    "port_west",
+    "port_sw",
+    "port_south",
+    "port_se",
+    "port_ne"
+  ],
+  "traffic_routes": [
+    {
+      "route": "port_north_to_port_nw",
+      "edges": [
+        "boundary_north",
+        "boundary_nw_rev"
+      ]
+    },
+    {
+      "route": "port_north_to_port_west",
+      "edges": [
+        "boundary_north",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "boundary_west_rev"
+      ]
+    },
+    {
+      "route": "port_north_to_port_sw",
+      "edges": [
+        "boundary_north",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "west_bank",
+        "west_lower",
+        "roundabout_approach",
+        "ring_0",
+        "boundary_sw_rev"
+      ]
+    },
+    {
+      "route": "port_north_to_port_south",
+      "edges": [
+        "boundary_north",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "west_bank",
+        "west_lower",
+        "roundabout_approach",
+        "ring_0",
+        "ring_1",
+        "boundary_south_rev"
+      ]
+    },
+    {
+      "route": "port_north_to_port_se",
+      "edges": [
+        "boundary_north",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "west_bank",
+        "bank_link",
+        "bank_village",
+        "cu_village",
+        "inner_south",
+        "inner_east",
+        "cross_link",
+        "boundary_se_rev"
+      ]
+    },
+    {
+      "route": "port_north_to_port_ne",
+      "edges": [
+        "boundary_north",
+        "northwest_return_rev",
+        "north_return_rev",
+        "coast_north_rev",
+        "coast_turn_rev",
+        "boundary_ne_rev"
+      ]
+    },
+    {
+      "route": "port_nw_to_port_north",
+      "edges": [
+        "boundary_nw",
+        "boundary_north_rev"
+      ]
+    },
+    {
+      "route": "port_nw_to_port_west",
+      "edges": [
+        "boundary_nw",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "boundary_west_rev"
+      ]
+    },
+    {
+      "route": "port_nw_to_port_sw",
+      "edges": [
+        "boundary_nw",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "west_bank",
+        "west_lower",
+        "roundabout_approach",
+        "ring_0",
+        "boundary_sw_rev"
+      ]
+    },
+    {
+      "route": "port_nw_to_port_south",
+      "edges": [
+        "boundary_nw",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "west_bank",
+        "west_lower",
+        "roundabout_approach",
+        "ring_0",
+        "ring_1",
+        "boundary_south_rev"
+      ]
+    },
+    {
+      "route": "port_nw_to_port_se",
+      "edges": [
+        "boundary_nw",
+        "hamabo_return",
+        "start_south",
+        "school_approach",
+        "inner_west",
+        "inner_center",
+        "inner_east",
+        "cross_link",
+        "boundary_se_rev"
+      ]
+    },
+    {
+      "route": "port_nw_to_port_ne",
+      "edges": [
+        "boundary_nw",
+        "northwest_return_rev",
+        "north_return_rev",
+        "coast_north_rev",
+        "coast_turn_rev",
+        "boundary_ne_rev"
+      ]
+    },
+    {
+      "route": "port_west_to_port_north",
+      "edges": [
+        "boundary_west",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_north_rev"
+      ]
+    },
+    {
+      "route": "port_west_to_port_nw",
+      "edges": [
+        "boundary_west",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_nw_rev"
+      ]
+    },
+    {
+      "route": "port_west_to_port_sw",
+      "edges": [
+        "boundary_west",
+        "west_bank",
+        "west_lower",
+        "roundabout_approach",
+        "ring_0",
+        "boundary_sw_rev"
+      ]
+    },
+    {
+      "route": "port_west_to_port_south",
+      "edges": [
+        "boundary_west",
+        "west_bank",
+        "west_lower",
+        "roundabout_approach",
+        "ring_0",
+        "ring_1",
+        "boundary_south_rev"
+      ]
+    },
+    {
+      "route": "port_west_to_port_se",
+      "edges": [
+        "boundary_west",
+        "inner_west",
+        "inner_center",
+        "inner_east",
+        "cross_link",
+        "boundary_se_rev"
+      ]
+    },
+    {
+      "route": "port_west_to_port_ne",
+      "edges": [
+        "boundary_west",
+        "inner_west",
+        "inner_center",
+        "inner_east",
+        "cross_link",
+        "godeungeo_road",
+        "godeungeo_approach",
+        "boundary_ne_rev"
+      ]
+    },
+    {
+      "route": "port_sw_to_port_north",
+      "edges": [
+        "boundary_sw",
+        "ring_1",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "roundabout_approach_rev",
+        "west_lower_rev",
+        "west_bank_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_north_rev"
+      ]
+    },
+    {
+      "route": "port_sw_to_port_nw",
+      "edges": [
+        "boundary_sw",
+        "ring_1",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "roundabout_approach_rev",
+        "west_lower_rev",
+        "west_bank_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_nw_rev"
+      ]
+    },
+    {
+      "route": "port_sw_to_port_west",
+      "edges": [
+        "boundary_sw",
+        "ring_1",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "roundabout_approach_rev",
+        "west_lower_rev",
+        "west_bank_rev",
+        "boundary_west_rev"
+      ]
+    },
+    {
+      "route": "port_sw_to_port_south",
+      "edges": [
+        "boundary_sw",
+        "ring_1",
+        "boundary_south_rev"
+      ]
+    },
+    {
+      "route": "port_sw_to_port_se",
+      "edges": [
+        "boundary_sw",
+        "ring_1",
+        "ring_2",
+        "eomeong_road",
+        "east_sweep",
+        "east_main",
+        "boundary_se_rev"
+      ]
+    },
+    {
+      "route": "port_sw_to_port_ne",
+      "edges": [
+        "boundary_sw",
+        "ring_1",
+        "ring_2",
+        "eomeong_road",
+        "east_sweep",
+        "east_main",
+        "godeungeo_road",
+        "godeungeo_approach",
+        "boundary_ne_rev"
+      ]
+    },
+    {
+      "route": "port_south_to_port_north",
+      "edges": [
+        "boundary_south",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "roundabout_approach_rev",
+        "west_lower_rev",
+        "west_bank_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_north_rev"
+      ]
+    },
+    {
+      "route": "port_south_to_port_nw",
+      "edges": [
+        "boundary_south",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "roundabout_approach_rev",
+        "west_lower_rev",
+        "west_bank_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_nw_rev"
+      ]
+    },
+    {
+      "route": "port_south_to_port_west",
+      "edges": [
+        "boundary_south",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "roundabout_approach_rev",
+        "west_lower_rev",
+        "west_bank_rev",
+        "boundary_west_rev"
+      ]
+    },
+    {
+      "route": "port_south_to_port_sw",
+      "edges": [
+        "boundary_south",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "ring_0",
+        "boundary_sw_rev"
+      ]
+    },
+    {
+      "route": "port_south_to_port_se",
+      "edges": [
+        "boundary_south",
+        "ring_2",
+        "eomeong_road",
+        "east_sweep",
+        "east_main",
+        "boundary_se_rev"
+      ]
+    },
+    {
+      "route": "port_south_to_port_ne",
+      "edges": [
+        "boundary_south",
+        "ring_2",
+        "eomeong_road",
+        "east_sweep",
+        "east_main",
+        "godeungeo_road",
+        "godeungeo_approach",
+        "boundary_ne_rev"
+      ]
+    },
+    {
+      "route": "port_se_to_port_north",
+      "edges": [
+        "boundary_se",
+        "cross_link_rev",
+        "inner_east_rev",
+        "inner_south_rev",
+        "cu_village_rev",
+        "bank_village_rev",
+        "bank_link_rev",
+        "west_bank_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_north_rev"
+      ]
+    },
+    {
+      "route": "port_se_to_port_nw",
+      "edges": [
+        "boundary_se",
+        "cross_link_rev",
+        "inner_east_rev",
+        "inner_center_rev",
+        "inner_west_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_nw_rev"
+      ]
+    },
+    {
+      "route": "port_se_to_port_west",
+      "edges": [
+        "boundary_se",
+        "cross_link_rev",
+        "inner_east_rev",
+        "inner_center_rev",
+        "inner_west_rev",
+        "boundary_west_rev"
+      ]
+    },
+    {
+      "route": "port_se_to_port_sw",
+      "edges": [
+        "boundary_se",
+        "east_main_rev",
+        "east_sweep_rev",
+        "eomeong_road_rev",
+        "ring_3",
+        "ring_4",
+        "ring_0",
+        "boundary_sw_rev"
+      ]
+    },
+    {
+      "route": "port_se_to_port_south",
+      "edges": [
+        "boundary_se",
+        "east_main_rev",
+        "east_sweep_rev",
+        "eomeong_road_rev",
+        "ring_3",
+        "ring_4",
+        "ring_0",
+        "ring_1",
+        "boundary_south_rev"
+      ]
+    },
+    {
+      "route": "port_se_to_port_ne",
+      "edges": [
+        "boundary_se",
+        "godeungeo_road",
+        "godeungeo_approach",
+        "boundary_ne_rev"
+      ]
+    },
+    {
+      "route": "port_ne_to_port_north",
+      "edges": [
+        "boundary_ne",
+        "godeungeo_approach_rev",
+        "inner_join_rev",
+        "inner_east_rev",
+        "inner_center_rev",
+        "inner_west_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_north_rev"
+      ]
+    },
+    {
+      "route": "port_ne_to_port_nw",
+      "edges": [
+        "boundary_ne",
+        "godeungeo_approach_rev",
+        "inner_join_rev",
+        "inner_east_rev",
+        "inner_center_rev",
+        "inner_west_rev",
+        "school_approach_rev",
+        "start_south_rev",
+        "hamabo_return_rev",
+        "boundary_nw_rev"
+      ]
+    },
+    {
+      "route": "port_ne_to_port_west",
+      "edges": [
+        "boundary_ne",
+        "godeungeo_approach_rev",
+        "inner_join_rev",
+        "inner_east_rev",
+        "inner_center_rev",
+        "inner_west_rev",
+        "boundary_west_rev"
+      ]
+    },
+    {
+      "route": "port_ne_to_port_sw",
+      "edges": [
+        "boundary_ne",
+        "godeungeo_approach_rev",
+        "inner_join_rev",
+        "inner_east_rev",
+        "inner_south_rev",
+        "bakery_sagyejeong_rev",
+        "ring_4",
+        "ring_0",
+        "boundary_sw_rev"
+      ]
+    },
+    {
+      "route": "port_ne_to_port_south",
+      "edges": [
+        "boundary_ne",
+        "godeungeo_approach_rev",
+        "inner_join_rev",
+        "inner_east_rev",
+        "inner_south_rev",
+        "bakery_sagyejeong_rev",
+        "ring_4",
+        "ring_0",
+        "ring_1",
+        "boundary_south_rev"
+      ]
+    },
+    {
+      "route": "port_ne_to_port_se",
+      "edges": [
+        "boundary_ne",
+        "godeungeo_approach_rev",
+        "godeungeo_road_rev",
+        "boundary_se_rev"
+      ]
+    }
+  ],
+  "school_zone": {
+    "speed_kmh": 30,
+    "from": "범하다 부근 / 제주은행",
+    "to": "보룡제과 앞 / 은행 남동쪽 CU",
+    "edges": [
+      "school_approach",
+      "west_bank",
+      "west_lower",
+      "bank_link"
+    ],
+    "sign_nodes": [
+      "school_north",
+      "west_lower",
+      "cu_bank"
+    ],
+    "approach_edges": [
+      "bank_village"
+    ],
+    "bidirectional_edges": [
+      "bank_link",
+      "bank_link_rev",
+      "school_approach",
+      "school_approach_rev",
+      "west_bank",
+      "west_bank_rev",
+      "west_lower",
+      "west_lower_rev"
+    ]
+  },
+  "signals": {
+    "controllers": {
+      "signal_bank": [
+        "bank"
+      ],
+      "signal_east": [
+        "east_cross"
+      ],
+      "signal_godeungeo": [
+        "godeungeo"
+      ]
+    },
+    "timing_assumed": {
+      "cycle_seconds": 90,
+      "yellow_seconds": 3,
+      "all_red_seconds": 2
+    }
+  },
+  "one_way_streets": {
+    "inner_join": -1
+  },
+  "straight_only_connections": {
+    "inner_join_rev": "inner_east_rev"
+  },
+  "gui_playback": {
+    "step_seconds": 0.2,
+    "delay_ms": 200
+  },
+  "traffic_per_hour": 700
+}

@@ -1,0 +1,25 @@
+{
+  "traffic_lights": [
+    "signal_south"
+  ],
+  "stop_controls": {
+    "bank": {
+      "type": "allway_stop",
+      "stop_connections": 2
+    },
+    "triangle_northeast": {
+      "type": "allway_stop",
+      "stop_connections": 7
+    },
+    "godeungeo": {
+      "type": "allway_stop",
+      "stop_connections": 8
+    }
+  },
+  "observed_stop_counts": {
+    "bank": 149,
+    "triangle_northeast": 89,
+    "godeungeo": 81
+  },
+  "observed_south_red_stops": 67
+}

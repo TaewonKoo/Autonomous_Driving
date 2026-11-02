@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<edges>
+  <edge id="start_south" from="hamabo" to="school_north" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="34.774,361.867 47.814,325.463 51.618,311.879" />
+  <edge id="start_south_rev" from="school_north" to="hamabo" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="51.618,311.879 47.814,325.463 34.774,361.867" />
+  <edge id="school_approach" from="school_north" to="west_cross" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="51.618,311.879 65.201,278.735" />
+  <edge id="school_approach_rev" from="west_cross" to="school_north" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="65.201,278.735 51.618,311.879" />
+  <edge id="west_bank" from="west_cross" to="bank" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="65.201,278.735 78.785,227.118" />
+  <edge id="west_bank_rev" from="bank" to="west_cross" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="78.785,227.118 65.201,278.735" />
+  <edge id="west_lower" from="bank" to="west_lower" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="78.785,227.118 83.675,167.893 84.218,78.785" />
+  <edge id="west_lower_rev" from="west_lower" to="bank" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="84.218,78.785 83.675,167.893 78.785,227.118" />
+  <edge id="roundabout_approach" from="west_lower" to="rb_n" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="84.218,78.785 84.218,57.051" />
+  <edge id="roundabout_approach_rev" from="rb_n" to="west_lower" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="84.218,57.051 84.218,78.785" />
+  <edge id="bakery_sagyejeong" from="rb_ne" to="inner_s" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="97.281,51.640 116.276,73.351 152.680,110.299 176.043,131.489 197.234,152.136" />
+  <edge id="bakery_sagyejeong_rev" from="inner_s" to="rb_ne" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="197.234,152.136 176.043,131.489 152.680,110.299 116.276,73.351 97.281,51.640" />
+  <edge id="eomeong_road" from="rb_e" to="eomeong" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="102.692,38.577 130.403,45.098 184.737,59.768" />
+  <edge id="eomeong_road_rev" from="eomeong" to="rb_e" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="184.737,59.768 130.403,45.098 102.692,38.577" />
+  <edge id="east_sweep" from="eomeong" to="east_curve" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="184.737,59.768 255.372,72.265 326.006,84.218 380.341,101.605" />
+  <edge id="east_sweep_rev" from="east_curve" to="eomeong" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="380.341,101.605 326.006,84.218 255.372,72.265 184.737,59.768" />
+  <edge id="east_main" from="east_curve" to="east_cross" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="380.341,101.605 416.745,124.426 458.039,164.633 517.807,222.228" />
+  <edge id="east_main_rev" from="east_cross" to="east_curve" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="517.807,222.228 458.039,164.633 416.745,124.426 380.341,101.605" />
+  <edge id="godeungeo_road" from="east_cross" to="inner_exit" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="517.807,222.228 570.511,274.932 599.308,302.643" />
+  <edge id="godeungeo_road_rev" from="inner_exit" to="east_cross" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="599.308,302.643 570.511,274.932 517.807,222.228" />
+  <edge id="godeungeo_approach" from="inner_exit" to="godeungeo" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="599.308,302.643 630.279,333.613" />
+  <edge id="godeungeo_approach_rev" from="godeungeo" to="inner_exit" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="630.279,333.613 599.308,302.643" />
+  <edge id="coast_turn" from="godeungeo" to="coast_bend" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="630.279,333.613 605.829,359.150 579.748,395.011 544.431,429.785" />
+  <edge id="coast_turn_rev" from="coast_bend" to="godeungeo" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="544.431,429.785 579.748,395.011 605.829,359.150 630.279,333.613" />
+  <edge id="coast_north" from="coast_bend" to="coast_top" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="544.431,429.785 514.003,444.455 447.715,462.386 386.861,477.599 326.550,491.726" />
+  <edge id="coast_north_rev" from="coast_top" to="coast_bend" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="326.550,491.726 386.861,477.599 447.715,462.386 514.003,444.455 544.431,429.785" />
+  <edge id="north_return" from="coast_top" to="north_cross" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="326.550,491.726 282.539,474.883 232.008,449.345 181.477,420.005" />
+  <edge id="north_return_rev" from="north_cross" to="coast_top" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="181.477,420.005 232.008,449.345 282.539,474.883 326.550,491.726" />
+  <edge id="northwest_return" from="north_cross" to="northwest" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="181.477,420.005 149.420,409.681 96.172,396.098 27.711,386.318" />
+  <edge id="northwest_return_rev" from="northwest" to="north_cross" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="27.711,386.318 96.172,396.098 149.420,409.681 181.477,420.005" />
+  <edge id="hamabo_return" from="northwest" to="hamabo" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="27.711,386.318 34.774,361.867" />
+  <edge id="hamabo_return_rev" from="hamabo" to="northwest" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="34.774,361.867 27.711,386.318" />
+  <edge id="inner_west" from="west_cross" to="inner_w" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="65.201,278.735 138.009,289.059 192.887,297.753" />
+  <edge id="inner_west_rev" from="inner_w" to="west_cross" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="192.887,297.753 138.009,289.059 65.201,278.735" />
+  <edge id="inner_center" from="inner_w" to="inner_c" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="192.887,297.753 267.325,259.718 328.180,252.655" />
+  <edge id="inner_center_rev" from="inner_c" to="inner_w" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="328.180,252.655 267.325,259.718 192.887,297.753" />
+  <edge id="inner_east" from="inner_c" to="inner_e" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="328.180,252.655 453.692,268.955" />
+  <edge id="inner_east_rev" from="inner_e" to="inner_c" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="453.692,268.955 328.180,252.655" />
+  <edge id="inner_join_rev" from="inner_exit" to="inner_e" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="599.308,302.643 565.078,287.972 453.692,268.955" />
+  <edge id="inner_diagonal_n" from="north_cross" to="inner_w" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="181.477,420.005 185.824,366.214 192.887,297.753" />
+  <edge id="inner_diagonal_n_rev" from="inner_w" to="north_cross" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="192.887,297.753 185.824,366.214 181.477,420.005" />
+  <edge id="inner_diagonal_s" from="inner_w" to="inner_s" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="192.887,297.753 198.321,222.228 197.234,152.136" />
+  <edge id="inner_diagonal_s_rev" from="inner_s" to="inner_w" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="197.234,152.136 198.321,222.228 192.887,297.753" />
+  <edge id="bank_link" from="bank" to="cu_bank" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="78.785,227.118 133.119,193.974" />
+  <edge id="bank_link_rev" from="cu_bank" to="bank" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="133.119,193.974 78.785,227.118" />
+  <edge id="bank_village" from="cu_bank" to="cu_approach" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="133.119,193.974 163.003,174.413" />
+  <edge id="bank_village_rev" from="cu_approach" to="cu_bank" numLanes="1" speed="8.333333333333334" width="3.2" priority="1" shape="163.003,174.413 133.119,193.974" />
+  <edge id="cu_village" from="cu_approach" to="inner_s" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="163.003,174.413 197.234,152.136" />
+  <edge id="cu_village_rev" from="inner_s" to="cu_approach" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="197.234,152.136 163.003,174.413" />
+  <edge id="inner_south" from="inner_s" to="inner_c" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="197.234,152.136 259.175,206.471 328.180,252.655" />
+  <edge id="inner_south_rev" from="inner_c" to="inner_s" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="328.180,252.655 259.175,206.471 197.234,152.136" />
+  <edge id="cross_link" from="inner_e" to="east_cross" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="453.692,268.955 517.807,222.228" />
+  <edge id="cross_link_rev" from="east_cross" to="inner_e" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="517.807,222.228 453.692,268.955" />
+  <edge id="boundary_north" from="port_north" to="northwest" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="2.717,493.900 27.711,386.318" />
+  <edge id="boundary_north_rev" from="northwest" to="port_north" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="27.711,386.318 2.717,493.900" />
+  <edge id="boundary_nw" from="port_nw" to="northwest" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="-70.635,371.647 27.711,386.318" />
+  <edge id="boundary_nw_rev" from="northwest" to="port_nw" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="27.711,386.318 -70.635,371.647" />
+  <edge id="boundary_west" from="port_west" to="west_cross" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="-51.618,266.782 65.201,278.735" />
+  <edge id="boundary_west_rev" from="west_cross" to="port_west" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="65.201,278.735 -51.618,266.782" />
+  <edge id="boundary_sw" from="port_sw" to="rb_w" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="-46.184,26.081 65.745,38.577" />
+  <edge id="boundary_sw_rev" from="rb_w" to="port_sw" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="65.745,38.577 -46.184,26.081" />
+  <edge id="boundary_south" from="port_south" to="rb_s" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="81.502,-71.178 84.218,20.104" />
+  <edge id="boundary_south_rev" from="rb_s" to="port_south" numLanes="1" speed="13.88888888888889" width="3.2" priority="1" shape="84.218,20.104 81.502,-71.178" />
+  <edge id="boundary_se" from="port_se" to="east_cross" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="431.958,-60.311 474.339,100.519 517.807,222.228" />
+  <edge id="boundary_se_rev" from="east_cross" to="port_se" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="517.807,222.228 474.339,100.519 431.958,-60.311" />
+  <edge id="boundary_ne" from="port_ne" to="godeungeo" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="728.081,393.381 630.279,333.613" />
+  <edge id="boundary_ne_rev" from="godeungeo" to="port_ne" numLanes="2" speed="16.666666666666668" width="3.2" priority="2" shape="630.279,333.613 728.081,393.381" />
+  <edge id="ring_0" from="rb_n" to="rb_w" numLanes="2" speed="5.555555555555555" width="3.2" priority="5" shape="84.218,57.051 82.408,56.962 80.614,56.696 78.856,56.256 77.149,55.645 75.510,54.870 73.955,53.938 72.499,52.858 71.155,51.640 69.938,50.297 68.858,48.841 67.926,47.286 67.151,45.647 66.540,43.940 66.100,42.181 65.834,40.388 65.745,38.577" />
+  <edge id="ring_1" from="rb_w" to="rb_s" numLanes="2" speed="5.555555555555555" width="3.2" priority="5" shape="65.745,38.577 65.834,36.767 66.100,34.973 66.540,33.215 67.151,31.508 67.926,29.869 68.858,28.314 69.938,26.858 71.155,25.515 72.499,24.297 73.955,23.217 75.510,22.285 77.149,21.510 78.856,20.899 80.614,20.459 82.408,20.193 84.218,20.104" />
+  <edge id="ring_2" from="rb_s" to="rb_e" numLanes="2" speed="5.555555555555555" width="3.2" priority="5" shape="84.218,20.104 86.029,20.193 87.822,20.459 89.581,20.899 91.288,21.510 92.927,22.285 94.482,23.217 95.938,24.297 97.281,25.515 98.499,26.858 99.579,28.314 100.511,29.869 101.286,31.508 101.897,33.215 102.337,34.973 102.603,36.767 102.692,38.577" />
+  <edge id="ring_3" from="rb_e" to="rb_ne" numLanes="2" speed="5.555555555555555" width="3.2" priority="5" shape="102.692,38.577 102.603,40.388 102.337,42.181 101.897,43.940 101.286,45.647 100.511,47.286 99.579,48.841 98.499,50.297 97.281,51.640" />
+  <edge id="ring_4" from="rb_ne" to="rb_n" numLanes="2" speed="5.555555555555555" width="3.2" priority="5" shape="97.281,51.640 95.938,52.858 94.482,53.938 92.927,54.870 91.288,55.645 89.581,56.256 87.822,56.696 86.029,56.962 84.218,57.051" />
+</edges>

@@ -1,0 +1,40 @@
+{
+  "crosswalk_count": 0,
+  "native_crossings_count": 0,
+  "outer_entry_straight_length_m": 36.224,
+  "outer_curb_max_distance_from_straight_axis_m": 0.008156,
+  "painted_island_min_lane_edge_clearance_m": 0.488,
+  "separate_entry_lane_edge_gap_m": 0.007,
+  "lane_edge_gap_2m_after_fork_m": 0.058,
+  "stop_line_setbacks_m": {
+    "east_main": 4.5,
+    "east_main_north_rev": 4.5,
+    "east_signal_approach_rev": 1.5,
+    "east_right_slip": 12
+  },
+  "left_approach_length_m": 17.08,
+  "stop_bars_on_pavement": true,
+  "stop_bar_count": 3,
+  "right_yield_dash_count": 3,
+  "same_routes_and_start": {
+    "outermost": {
+      "same_directed_cycle": true,
+      "start_edge": "north_return",
+      "start_position_m": 48.90476674674972,
+      "distance_from_junction_m": 100
+    },
+    "expanded": {
+      "same_directed_cycle": true,
+      "start_edge": "north_return",
+      "start_position_m": 48.90476674674972,
+      "distance_from_junction_m": 100
+    },
+    "original": {
+      "same_directed_cycle": true,
+      "start_edge": "north_return",
+      "start_position_m": 48.90476674674972,
+      "distance_from_junction_m": 100
+    }
+  },
+  "backup2_26_files_unchanged": true
+}

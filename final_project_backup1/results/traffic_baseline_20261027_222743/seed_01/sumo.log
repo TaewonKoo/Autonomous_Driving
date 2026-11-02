@@ -1,0 +1,30 @@
+Loading net-file from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261027_222743\network\generated\seongsan.net.xml' ... done (10ms).
+Loading additional-files from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261027_222743\network\generated\seongsan.add.xml' ... done (3ms).
+Loading route-files incrementally from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261027_222743\network\generated\seongsan.rou.xml'
+Loading done.
+Simulation version 1.27.1 started with time: 0.00.
+Simulation ended at time: 5400.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 1.58s
+ Real time factor: 3417.72
+ UPS: 212860.126582
+Vehicles:
+ Inserted: 714
+ Running: 0
+ Waiting: 0
+ Emergency Braking: 6
+Statistics (avg of 714):
+ RouteLength: 666.24
+ Speed: 7.48
+ Duration: 94.21
+ WaitingTime: 11.79
+ TimeLoss: 36.20
+ DepartDelay: 4.11
+ DepartDelayWaiting: 0.00
+Warning: Vehicle 'flow_port_south_to_port_west.3' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=664.20.
+Warning: Vehicle 'flow_port_ne_to_port_se.3' performs emergency braking on lane 'godeungeo_road_rev_1' with decel=9.00, wished=4.50, severity=1.00, time=666.00.
+Warning: Vehicle 'flow_port_south_to_port_west.8' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=1744.00.
+Warning: Vehicle 'flow_port_south_to_port_se.11' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=2402.00.
+Warning: Vehicle 'flow_port_ne_to_port_se.13' performs emergency braking on lane 'godeungeo_road_rev_1' with decel=9.00, wished=4.50, severity=1.00, time=2826.00.
+Warning: Vehicle 'flow_port_south_to_port_ne.14' performs emergency braking on lane 'boundary_south_0' with decel=9.00, wished=4.50, severity=1.00, time=3054.00.

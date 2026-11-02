@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes>
+  <node id="hamabo" x="34.774016" y="361.86710400000004" type="priority" />
+  <node id="school_north" x="51.61768000000001" y="311.879456" type="priority" />
+  <node id="west_cross" x="65.20128000000001" y="278.735472" type="priority" />
+  <node id="bank" x="78.78488" y="227.117792" type="traffic_light" tl="signal_bank" />
+  <node id="cu_bank" x="133.11928" y="193.97380800000002" type="priority" />
+  <node id="cu_approach" x="163.00320000000002" y="174.41342400000002" type="priority" />
+  <node id="west_lower" x="84.21832" y="78.78488" type="priority" />
+  <node id="rb_n" x="84.21832" y="57.051120000000004" type="priority" />
+  <node id="rb_w" x="65.744624" y="38.577424" type="priority" />
+  <node id="rb_s" x="84.21832" y="20.103728" type="priority" />
+  <node id="rb_e" x="102.69201600000001" y="38.577424" type="priority" />
+  <node id="rb_ne" x="97.28119541072" y="51.64029941072003" type="priority" />
+  <node id="eomeong" x="184.73696" y="59.76784000000001" type="priority" />
+  <node id="east_curve" x="380.34080000000006" y="101.60532800000001" type="priority" />
+  <node id="east_cross" x="517.8068320000001" y="222.227696" type="traffic_light" tl="signal_east" />
+  <node id="godeungeo" x="630.27904" y="333.613216" type="traffic_light" tl="signal_godeungeo" radius="15" />
+  <node id="inner_exit" x="599.308432" y="302.64260800000005" type="priority" />
+  <node id="coast_bend" x="544.430688" y="429.78510400000005" type="priority" />
+  <node id="coast_top" x="326.54974400000003" y="491.72632000000004" type="priority" />
+  <node id="north_cross" x="181.476896" y="420.00491200000005" type="priority" />
+  <node id="northwest" x="27.710544000000002" y="386.317584" type="priority" />
+  <node id="inner_w" x="192.88712" y="297.752512" type="priority" />
+  <node id="inner_c" x="328.179776" y="252.65496000000002" type="priority" />
+  <node id="inner_e" x="453.69224" y="268.95528" type="priority" />
+  <node id="inner_s" x="197.23387200000002" y="152.13632" type="priority" />
+  <node id="port_north" x="2.7167200000000005" y="493.89969600000006" type="dead_end" />
+  <node id="port_nw" x="-70.63472" y="371.64729600000004" type="dead_end" />
+  <node id="port_west" x="-51.61768000000001" y="266.781904" type="dead_end" />
+  <node id="port_sw" x="-46.18424" y="26.080512000000002" type="dead_end" />
+  <node id="port_south" x="81.50160000000001" y="-71.178064" type="dead_end" />
+  <node id="port_se" x="431.95848000000007" y="-60.311184000000004" type="dead_end" />
+  <node id="port_ne" x="728.0809600000001" y="393.38105600000006" type="dead_end" />
+</nodes>

@@ -1,0 +1,7 @@
+numpy
+torch
+gymnasium
+traci
+sumolib
+shapely>=2.1
+tensorboard

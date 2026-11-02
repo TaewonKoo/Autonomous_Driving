@@ -1,0 +1,6 @@
+{
+  "removed_connection": "triangle_east_leg_rev_to_triangle_east_upper_rev",
+  "new_connection": "triangle_cross_to_triangle_east_upper_rev",
+  "minimum_distance_from_turning_lane_centers_m": 1.4486801710596178,
+  "network_and_routes_unchanged": true
+}

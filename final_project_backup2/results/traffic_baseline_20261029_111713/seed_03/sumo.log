@@ -1,0 +1,32 @@
+Loading net-file from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261029_111713\network\generated\seongsan.net.xml' ... done (11ms).
+Loading additional-files from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261029_111713\network\generated\seongsan.add.xml' ... done (2ms).
+Loading route-files incrementally from 'C:\Users\taekm\Artificial-Intelligence-and-Control\final_project\results\traffic_baseline_20261029_111713\network\generated\seongsan.rou.xml'
+Loading done.
+Simulation version 1.27.1 started with time: 0.00.
+Simulation ended at time: 5400.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 4.74s
+ Real time factor: 1139
+ UPS: 157600.717148
+Vehicles:
+ Inserted: 936
+ Running: 0
+ Waiting: 0
+ Emergency Braking: 8
+Statistics (avg of 936):
+ RouteLength: 1332.35
+ Speed: 8.75
+ Duration: 159.65
+ WaitingTime: 14.50
+ TimeLoss: 45.09
+ DepartDelay: 6.79
+ DepartDelayWaiting: 0.00
+Warning: Vehicle 'flow_port_ne_to_port_restaurant.1' performs emergency braking on lane 'godeungeo_road_rev_1' with decel=9.00, wished=4.50, severity=1.00, time=310.00.
+Warning: Vehicle 'flow_port_west_to_port_nw.2' performs emergency braking on lane 'hamabo_return_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=608.00.
+Warning: Vehicle 'flow_port_ne_to_port_south_west.2' performs emergency braking on lane 'bakery_sagyejeong_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=708.40.
+Warning: Vehicle 'flow_port_south_to_port_sw.4' performs emergency braking on lane ':rb_s_0_1' with decel=9.00, wished=4.50, severity=1.00, time=1250.60.
+Warning: Vehicle 'flow_port_west_to_port_nw.5' performs emergency braking on lane 'hamabo_return_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=1472.00.
+Warning: Vehicle 'flow_port_north_to_port_restaurant.7' performs emergency braking on lane 'roundabout_approach_0' with decel=9.00, wished=4.50, severity=1.00, time=2212.00.
+Warning: Vehicle 'flow_port_south_to_port_nw.12' performs emergency braking on lane ':rb_s_0_1' with decel=9.00, wished=4.50, severity=1.00, time=3586.60.
+Warning: Vehicle 'flow_port_restaurant_to_port_north.12' performs emergency braking on lane 'eomeong_road_rev_0' with decel=9.00, wished=4.50, severity=1.00, time=3617.60.

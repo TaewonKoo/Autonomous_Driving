@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<connections>
+  <delete from="triangle_top_rev" to="triangle_west_upper" />
+  <connection from="triangle_top_rev" to="minor_west_rev" fromLane="0" toLane="0" />
+  <delete from="triangle_east_upper_rev" to="triangle_top_rev" />
+  <delete from="triangle_east_upper_rev" to="triangle_east_upper" />
+  <connection from="triangle_east_upper_rev" to="minor_coast_rev" fromLane="0" toLane="0" />
+  <delete from="triangle_east_leg_rev" to="triangle_cross_rev" />
+  <connection from="triangle_east_leg_rev" to="triangle_east_upper_rev" fromLane="0" toLane="0" />
+  <delete from="main_sweep_rev" to="main_sweep" />
+  <delete from="main_sweep_rev" to="minor_west" />
+  <connection from="main_sweep_rev" to="east_sweep_rev" fromLane="0" toLane="0" />
+  <connection from="main_sweep_rev" to="east_sweep_rev" fromLane="1" toLane="1" />
+  <delete from="triangle_west_leg" to="triangle_west_leg_rev" />
+  <delete from="triangle_west_leg" to="triangle_east_leg_rev" />
+  <connection from="triangle_west_leg" to="coast_merge_approach" fromLane="0" toLane="0" />
+  <connection from="triangle_west_leg" to="coast_merge_approach" fromLane="1" toLane="1" />
+  <delete from="minor_west_rev" to="east_sweep_rev" />
+  <delete from="minor_west_rev" to="minor_west" />
+  <connection from="minor_west_rev" to="main_sweep" fromLane="0" toLane="0" />
+  <delete from="east_signal_approach_rev" to="east_main_rev" fromLane="0" toLane="0" />
+  <delete from="east_signal_approach_rev" to="east_main_north" fromLane="0" toLane="0" />
+  <delete from="east_signal_approach_rev" to="east_main_north" fromLane="0" toLane="1" />
+  <delete from="east_signal_approach_rev" to="east_signal_approach" fromLane="0" toLane="0" />
+  <connection from="east_signal_approach_rev" fromLane="0" to="east_main_rev" toLane="1" />
+  <delete from="east_turn_pocket_rev" to="east_signal_approach_rev" fromLane="0" toLane="0" />
+  <delete from="east_turn_pocket_rev" to="east_turn_pocket" fromLane="0" toLane="0" />
+  <delete from="east_turn_pocket_rev" to="east_turn_pocket" fromLane="1" toLane="0" />
+  <delete from="east_turn_pocket_rev" to="east_right_slip" fromLane="1" toLane="0" />
+  <connection from="east_turn_pocket_rev" fromLane="0" to="east_right_slip" toLane="0" />
+  <connection from="east_turn_pocket_rev" fromLane="1" to="east_signal_approach_rev" toLane="0" />
+  <delete from="east_right_slip" to="east_main_north_rev" fromLane="0" toLane="0" />
+  <delete from="east_right_slip" to="east_main_north_rev" fromLane="0" toLane="1" />
+  <delete from="east_right_slip" to="godeungeo_road" fromLane="0" toLane="1" />
+  <connection from="east_right_slip" fromLane="0" to="godeungeo_road" toLane="0" visibility="45" />
+  <delete from="triangle_west_upper" to="triangle_west_upper_rev" fromLane="0" toLane="0" />
+  <delete from="triangle_west_upper" to="triangle_west_upper_rev" fromLane="1" toLane="0" />
+  <delete from="triangle_west_upper" to="triangle_cross" fromLane="0" toLane="0" />
+  <delete from="triangle_west_upper" to="triangle_west_leg" fromLane="0" toLane="1" />
+  <delete from="triangle_west_upper" to="triangle_west_leg" fromLane="1" toLane="0" />
+  <connection from="triangle_west_upper" fromLane="0" to="triangle_west_leg" toLane="0" />
+  <connection from="triangle_west_upper" fromLane="1" to="triangle_west_leg" toLane="1" />
+  <connection from="triangle_west_upper" fromLane="1" to="triangle_cross" toLane="0" />
+  <connection from="coast_south_rev" to="coast_merge_approach_rev" fromLane="0" toLane="0" visibility="40" />
+  <connection from="coast_south_rev" to="coast_merge_approach_rev" fromLane="1" toLane="0" visibility="40" />
+</connections>

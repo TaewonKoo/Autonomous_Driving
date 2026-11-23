@@ -1,0 +1,156 @@
+{
+  "captured_at_kst": "2026-11-24T03:08:46+09:00",
+  "source_map_relative_path": "final_project/maps/seongsan",
+  "generated_net_modified_at_kst": "2026-11-24T03:06:49+09:00",
+  "source_design_modified_for_upload": false,
+  "native_map_sha256": "0347826859ae28a5dcdbd96ac4f1b8979426d229d10cdc0bba5a078467538b9c",
+  "normal_roads": 79,
+  "normal_lanes": 179,
+  "normal_lane_count_distribution": {
+    "1": 11,
+    "2": 36,
+    "3": 32
+  },
+  "loop_length_m": 1031.1,
+  "files": {
+    "generated/seongsan.sumocfg": {
+      "sha256": "688aa847c478267a63b51fd85806c696669c4ba0ab4027e5ae78482588983e9f",
+      "source": "maps/seongsan/generated/seongsan.sumocfg",
+      "bytes": 505
+    },
+    "generated/seongsan.net.xml": {
+      "sha256": "0347826859ae28a5dcdbd96ac4f1b8979426d229d10cdc0bba5a078467538b9c",
+      "source": "maps/seongsan/generated/seongsan.net.xml",
+      "bytes": 224437
+    },
+    "generated/seongsan.rou.xml": {
+      "sha256": "078129b2b6dd2622c5bab7db12617df037f0a8f31be79a77ced247241e20cf98",
+      "source": "maps/seongsan/generated/seongsan.rou.xml",
+      "bytes": 18305
+    },
+    "generated/seongsan.add.xml": {
+      "sha256": "d1a64e11e5fbbc024186e02ecb8dac65a519149e8f728e6c626cf3a5cc076ca1",
+      "source": "maps/seongsan/generated/seongsan.add.xml",
+      "bytes": 1305315
+    },
+    "generated/seongsan.gui.xml": {
+      "sha256": "6992f3dc6548c75314a485a7994464055036732fa5381ee17180b9ca6bd0192b",
+      "source": "maps/seongsan/generated/seongsan.gui.xml",
+      "bytes": 440
+    },
+    "generated/seongsan.nod.xml": {
+      "sha256": "897ce6c8ff1fd9a16e6ed696821502cce17efdb3cb6f55a598b35240fda3dcac",
+      "source": "maps/seongsan/generated/seongsan.nod.xml",
+      "bytes": 3617
+    },
+    "generated/seongsan.edg.xml": {
+      "sha256": "f2773f3d9a89d831596863e37737761de15c5bf8de104c066c20b91add4cb7b3",
+      "source": "maps/seongsan/generated/seongsan.edg.xml",
+      "bytes": 33552
+    },
+    "generated/seongsan.con.xml": {
+      "sha256": "f8af675a1790497b9dea208350b85caaf684a66d2fc38dc0d76d4c38b7cf8e0f",
+      "source": "maps/seongsan/generated/seongsan.con.xml",
+      "bytes": 5726
+    },
+    "generated/manifest.json": {
+      "sha256": "9a68da62ec673bac3c5eeeddac2861643016d1b8de8d68d8cc3d5159a8c8a272",
+      "source": "maps/seongsan/generated/manifest.json",
+      "bytes": 29566
+    },
+    "preview.svg": {
+      "sha256": "9ebd348059c40d78273cb94da18e9dcebef9ce37fa0d8cdba159834dc6d99edd",
+      "source": "maps/seongsan/preview.svg",
+      "bytes": 593733
+    },
+    "previews/preview_east_signal.svg": {
+      "sha256": "cdb43121e2e1f575a7b9c548aed0b7b56af1b59b74a6288ee170072aa6123747",
+      "source": "maps/seongsan/preview_east_signal.svg",
+      "bytes": 589613
+    },
+    "previews/preview_lane_merge.svg": {
+      "sha256": "f8fe7c4d7fafcacfcfd4abdf3a5b98524763b492874111ed4bedad02d50713b9",
+      "source": "maps/seongsan/preview_lane_merge.svg",
+      "bytes": 589613
+    },
+    "previews/preview_merge.svg": {
+      "sha256": "6b3b9f185cb16e301acd7a068790f1b27990be2d3d033b361693913a7ba2a29c",
+      "source": "maps/seongsan/preview_merge.svg",
+      "bytes": 589613
+    },
+    "previews/preview_north.svg": {
+      "sha256": "d5aa562a561d6ee6ad12803a95987259c5982eb62558f787d83253c04e463711",
+      "source": "maps/seongsan/preview_north.svg",
+      "bytes": 593704
+    },
+    "previews/preview_south.svg": {
+      "sha256": "bd54261ecc67f026255da3da449b7dd9147dad54411d7f0def77b057937ed170",
+      "source": "maps/seongsan/preview_south.svg",
+      "bytes": 593704
+    },
+    "previews/preview_triangle.svg": {
+      "sha256": "1a8b89b9380a09e823ea998c01935e93f521f73bb33d1967f2b84b9f1061a69e",
+      "source": "maps/seongsan/preview_triangle.svg",
+      "bytes": 593701
+    },
+    "previews/preview_west_junction.svg": {
+      "sha256": "5884aba45ee7468773e481ed2a07c61e07b81c9eaafd868c8a88bebbf91999bb",
+      "source": "maps/seongsan/preview_west_junction.svg",
+      "bytes": 589613
+    },
+    "source/maps/seongsan/builder.py": {
+      "sha256": "ac27dbac80c4447449f90747e94bba28fbe498e3d1586ca47cd88a23f784e22d",
+      "source": "maps/seongsan/builder.py",
+      "bytes": 55953
+    },
+    "source/maps/seongsan/config.py": {
+      "sha256": "e3c641b987b9db283eb15ea931dbc8e182dbb5fbffe7ac51544c25dd4b9d955f",
+      "source": "maps/seongsan/config.py",
+      "bytes": 34615
+    },
+    "source/maps/seongsan/geometry.py": {
+      "sha256": "64ee8af0cdd338292b2ab77aefb3ce0bf9b5ff40009e97fbda1db5d4d9ca5688",
+      "source": "maps/seongsan/geometry.py",
+      "bytes": 2882
+    },
+    "source/maps/seongsan/markings.py": {
+      "sha256": "5a0549d5356e1820967013105955092227324c57307c07532d9afbe8c168a2f8",
+      "source": "maps/seongsan/markings.py",
+      "bytes": 8085
+    },
+    "source/maps/seongsan/speed_policy.py": {
+      "sha256": "e2d028a756c1cd7ba9ac8041467561e9c417d04d7bdef099f408caeec9d3ce80",
+      "source": "maps/seongsan/speed_policy.py",
+      "bytes": 1801
+    },
+    "source/maps/seongsan/__init__.py": {
+      "sha256": "75bb8acb62be370b3ac63a7d53a743eefd5ed7ae24c4254c428edbd53846a542",
+      "source": "maps/seongsan/__init__.py",
+      "bytes": 44
+    },
+    "source/maps/__init__.py": {
+      "sha256": "50e515336df047f32e7ad329ef11f91dce3fd966873e262bae1fefec55d9ff3d",
+      "source": "maps/__init__.py",
+      "bytes": 80
+    },
+    "source/view_map.py": {
+      "sha256": "919c53d027963b6de5242a94a206c665c64870d59fec9e2c466019f3809f842c",
+      "source": "view_map.py",
+      "bytes": 12843
+    }
+  },
+  "validation": {
+    "time_kst": "2026-11-24T03:11:07+09:00",
+    "bundled_source_hashes_match": true,
+    "source_compiles": true,
+    "sumo_load_exit_code": 0,
+    "sumo_version": "1.27.1",
+    "simulation_seconds": 2,
+    "normal_roads": 79,
+    "normal_lanes": 179,
+    "routes_validated": 43,
+    "scope": "XML/relative assets/route continuity/source syntax and SUMO loading only; not learned-policy performance.",
+    "source_rebuild_all_generated_bytes_match": true,
+    "latest_source_still_matches_snapshot": true
+  }
+}

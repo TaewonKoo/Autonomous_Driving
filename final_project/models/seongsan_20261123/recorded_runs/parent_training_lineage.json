@@ -1,0 +1,74 @@
+[
+  {
+    "run": "paper_reward_full_route_seed23",
+    "steps": 3000320,
+    "start_steps": 2238464,
+    "stage": "full",
+    "resume": "results/observed_driving_20261122/paper_reward_full_route_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_full_seed23",
+    "steps": 2238464,
+    "start_steps": 2000896,
+    "stage": "full",
+    "resume": "results/observed_driving_20261122/paper_reward_full_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_junction_seed23",
+    "steps": 583680,
+    "start_steps": 331776,
+    "stage": "junction",
+    "resume": "results/observed_driving_20261122/paper_reward_junction_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_mixed_seed23",
+    "steps": 3500032,
+    "start_steps": 3000320,
+    "stage": "mixed",
+    "resume": "models/seongsan_full_ppo.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_preview_seed23",
+    "steps": 2000896,
+    "start_steps": 1826816,
+    "stage": "stop",
+    "resume": "results/observed_driving_20261122/paper_reward_preview_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_signal_seed23",
+    "steps": 1001472,
+    "start_steps": 0,
+    "stage": "signal",
+    "resume": null,
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_stop_curriculum_seed23",
+    "steps": 989184,
+    "start_steps": 583680,
+    "stage": "junction",
+    "resume": "results/observed_driving_20261122/paper_reward_stop_curriculum_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_stop_focused_seed23",
+    "steps": 1826816,
+    "start_steps": 1267712,
+    "stage": "stop",
+    "resume": "results/observed_driving_20261122/paper_reward_stop_focused_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  },
+  {
+    "run": "paper_reward_stop_goal_seed23",
+    "steps": 1267712,
+    "start_steps": 989184,
+    "stage": "junction",
+    "resume": "results/observed_driving_20261122/paper_reward_stop_goal_seed23/warmstart.pt",
+    "note": "Signal stage later continued on its own branch; stop/junction warm starts preserve their earlier fork in warmstart.pt."
+  }
+]

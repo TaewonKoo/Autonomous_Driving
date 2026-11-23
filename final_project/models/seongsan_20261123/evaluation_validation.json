@@ -1,0 +1,25 @@
+{
+  "validated_at_kst": "2026-11-23T22:53:10+09:00",
+  "model": "R08C05 seed25",
+  "seed_start": 800000,
+  "seed_end": 800099,
+  "episodes": 100,
+  "workers": 4,
+  "outcomes": {
+    "complete": 70,
+    "collision": 4,
+    "red_violation": 7,
+    "stop_violation": 5,
+    "route_failure": 14,
+    "timeout": 0
+  },
+  "checks": {
+    "all100_episode_records_equal_original_reference": true,
+    "mismatching_cases": 0,
+    "all100_seeds_unique_and_present": true,
+    "merged50plus50_records_equal_parallel100": true,
+    "duplicate_cases_rejected": true,
+    "different_traffic_protocol_rejected": true
+  },
+  "scope": "Evaluation packaging regression check on reused development cases, not new independent validation or new training. Merge fixtures partition this actual100-case run."
+}

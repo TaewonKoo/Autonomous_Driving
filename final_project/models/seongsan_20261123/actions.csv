@@ -1,0 +1,10 @@
+﻿action_id,acceleration_m_s2,lane_index_delta,lane_direction
+0,-4,-1,right
+1,-4,0,keep
+2,-4,1,left
+3,0,-1,right
+4,0,0,keep
+5,0,1,left
+6,3,-1,right
+7,3,0,keep
+8,3,1,left

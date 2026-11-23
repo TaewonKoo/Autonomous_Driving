@@ -1,0 +1,20 @@
+{
+  "confirmed_at": "2026-11-23T10:39:52.664970+09:00",
+  "source": "Explicit user: collision rate must be strictly below5%, more important than completion rate",
+  "heldout_episodes": 100,
+  "minimum_completions": null,
+  "maximum_collisions": 4,
+  "maximum_red_violations": null,
+  "maximum_stop_violations": null,
+  "interpretation": "Observed strict collision gate: 4/100 passes, 5/100 fails. Not a population-rate safety certificate. No other metric gates. Completion/timeouts/violations must still be disclosed; low collisions alone does not establish useful driving.",
+  "repeat_if_unmet": true,
+  "protocol_version": "collision_gate_v2",
+  "modified_at": "2026-11-23T17:47:15+09:00",
+  "collision_rate_percent_strict_upper": 5,
+  "selection_priority": [
+    "Require individual checkpoint development collision rate strictly below5%",
+    "Compare completion among passing models; other incident metrics break ties",
+    "Require collision rate strictly below5% on separate100-case confirmation"
+  ],
+  "other_thresholds_status": "Explicit user clarification: collision<5% only mandatory; completion, red violations and stop violations are comparison metrics"
+}

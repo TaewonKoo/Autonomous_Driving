@@ -1,0 +1,590 @@
+{
+  "created_at": "2026-11-23T10:22:25.173353+09:00",
+  "status": "declared_before_training",
+  "sources": {
+    "S1": {
+      "title": "Proximal Policy Optimization Algorithms",
+      "authors": "Schulman et al.",
+      "year": 2017,
+      "url": "https://arxiv.org/pdf/1707.06347v2",
+      "location": "Tables1,3,5; section6.1",
+      "scope": "clip0.1/0.2/0.3 in Table1; epoch3 in Table5; existing optimizer-profile numbers in Table3. Robot/Atari experiments, not Seongsan driving."
+    },
+    "S2": {
+      "title": "What Matters In On-Policy Reinforcement Learning? A Large-Scale Empirical Study",
+      "authors": "Andrychowicz et al.",
+      "year": 2020,
+      "url": "https://arxiv.org/pdf/2006.05990",
+      "location": "Section2, section3.7, AppendicesH.1/J.1",
+      "scope": "Tested lr{3e-5,1e-4,3e-4,...}, epoch{1,3,10}, minibatch{64,128,256}, and linear lr decay to0. The study warns about learning-rate/minibatch interactions; it does not validate these combinations for Seongsan."
+    },
+    "S3": {
+      "title": "Driver Dojo: A Benchmark for Generalizable Reinforcement Learning for Autonomous Driving",
+      "authors": "Rietsch et al.",
+      "year": 2022,
+      "url": "https://arxiv.org/pdf/2207.11432",
+      "location": "AppendixA.2, Table4(c)",
+      "scope": "SUMO benchmark PPO uses minibatch256. Other architecture, value-loss, action and environment choices are not imported with it."
+    }
+  },
+  "common_protocol": {
+    "purpose": "First screen of PPO learning settings with reward/dynamics fixed; not a reward-design sweep",
+    "control_id": "B00",
+    "control_settings": {
+      "learning_rate": 0.0003,
+      "learning_rate_schedule": "constant",
+      "clip": 0.2,
+      "epochs": 10,
+      "minibatch_size": 64,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "total_samples_per_update": 2048,
+      "worker_count": 4,
+      "samples_per_worker": 512,
+      "adam_epsilon": 1e-08,
+      "adam_betas": [
+        0.9,
+        0.999
+      ],
+      "entropy_bonus": 0.0,
+      "advantage_normalization": true,
+      "value_loss": "separate optimizer, MSE, no value clipping",
+      "gradient_clipping": false
+    },
+    "initial_checkpoint": "<PROJECT>\\models\\seongsan_full_ppo.pt",
+    "initial_checkpoint_sha256": "93f963fb25048505846d73a2ebffac9aa0162c6fd68fc8657104f1666d2aa4e8",
+    "initial_checkpoint_steps": 3000320,
+    "start_method": "Same actor and critic weights in all candidates and B00; fresh Adam state equally in every run",
+    "fixed_model": {
+      "algorithm": "PPO-Clip",
+      "observations": 200,
+      "actions": 9,
+      "actor": [
+        64,
+        64
+      ],
+      "critic": [
+        64,
+        64
+      ],
+      "activation": "tanh"
+    },
+    "fixed_environment": {
+      "map": "original Seongsan full route",
+      "traffic": 1.0,
+      "dt_seconds": 0.2,
+      "episode_seconds": 500,
+      "speed_mode": 96,
+      "lane_change_mode": 0,
+      "numeric_correction": false,
+      "failure_time_tail": false,
+      "lateral_motion": "Original SUMO default retained; original TraCI lane request persistence3s"
+    },
+    "fixed_reward": {
+      "time_per_step": -0.001,
+      "collision": -10.0,
+      "success": 1.0,
+      "junction_clear_bonus": 1.0,
+      "stop_bonus": 1.0,
+      "red_violation": "-0.25-0.02*v",
+      "overspeed": "-0.002*excess_speed",
+      "scope": "Existing Seongsan reward combination with local subtask bonuses; not a complete paper reward"
+    },
+    "proposed_budget": {
+      "additional_steps_requested": 500000,
+      "additional_steps_batch_rounded": 501760,
+      "source": "Reuse of prior continuation experiment budget; local experiment management, not paper optimality"
+    },
+    "proposed_training_repeats": {
+      "seeds": [
+        23,
+        24,
+        25
+      ],
+      "scope": "Local existing seed labels; papers motivate repeated training, not these seed numbers or a universal adequate sample count"
+    },
+    "evaluation": {
+      "full_reference_seed_base": 800000,
+      "full_reference_episodes": 100,
+      "signal_reference_seed_base": 900000,
+      "signal_reference_episodes": 100,
+      "red_to_green_episodes": 50,
+      "scope": "Existing development sets for screening; separate previously unused scenarios required for final model selection/generalization",
+      "metrics": [
+        "completion",
+        "collision",
+        "red violation",
+        "stop violation",
+        "route failure",
+        "timeout",
+        "travel time",
+        "commanded/realized speed mismatch"
+      ],
+      "selection_rule": "Report safety tradeoffs; do not rank by reward scale or one best seed alone"
+    },
+    "local_lr_schedule_for_C03": "lr = 3e-4 * max(0, 1-(steps-start_steps)/additional_steps_requested); no simultaneous clip decay",
+    "implementation_status": "Runtime integration verified by integration_checks.json",
+    "training_started": false
+  },
+  "candidates": [
+    {
+      "id": "R08C01",
+      "name": "라운드8 문헌범위 조합1",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "constant",
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 48,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C02",
+      "name": "라운드8 문헌범위 조합2",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "epochs": 10,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 160,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C03",
+      "name": "라운드8 문헌범위 조합3",
+      "overrides": {
+        "learning_rate": 3e-05,
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 3e-05,
+        "learning_rate_schedule": "constant",
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 48,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C04",
+      "name": "라운드8 문헌범위 조합4",
+      "overrides": {
+        "learning_rate": 3e-05,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 3e-05,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "epochs": 10,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 160,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C05",
+      "name": "라운드8 문헌범위 조합5",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 256
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "constant",
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 256,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 24,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C06",
+      "name": "라운드8 문헌범위 조합6",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 48,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C07",
+      "name": "라운드8 문헌범위 조합7",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "minibatch_size": 256
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.3,
+        "epochs": 10,
+        "minibatch_size": 256,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 80,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C08",
+      "name": "라운드8 문헌범위 조합8",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "clip": 0.1,
+        "epochs": 3,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "constant",
+        "clip": 0.1,
+        "epochs": 3,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 48,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C09",
+      "name": "라운드8 문헌범위 조합9",
+      "overrides": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.1,
+        "minibatch_size": 128
+      },
+      "effective_learning_settings": {
+        "learning_rate": 0.0001,
+        "learning_rate_schedule": "linear_to_zero",
+        "clip": 0.1,
+        "epochs": 10,
+        "minibatch_size": 128,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 160,
+      "status": "selected_not_trained",
+      "performance": null
+    },
+    {
+      "id": "R08C10",
+      "name": "라운드8 문헌범위 조합10",
+      "overrides": {
+        "learning_rate": 3e-05,
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 256
+      },
+      "effective_learning_settings": {
+        "learning_rate": 3e-05,
+        "learning_rate_schedule": "constant",
+        "clip": 0.3,
+        "epochs": 3,
+        "minibatch_size": 256,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "total_samples_per_update": 2048,
+        "worker_count": 4,
+        "samples_per_worker": 512,
+        "adam_epsilon": 1e-08,
+        "adam_betas": [
+          0.9,
+          0.999
+        ],
+        "entropy_bonus": 0.0,
+        "advantage_normalization": true,
+        "value_loss": "separate optimizer, MSE, no value clipping",
+        "gradient_clipping": false
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "source_location": "S1 Tables1/5; S2 H.1/J.1; S3 minibatch256 only",
+      "provenance": "Untried combination of declared published scalar values, chosen by a local nearest-configuration heuristic; no optimality claim",
+      "full_paper_replication": false,
+      "hypothesis": "Test an untried nearby setting without changing reward/observation/action/dynamics",
+      "priority": "adaptive hypothesis, not validated ranking",
+      "risk": "One-factor and multi-factor interactions may differ; all trial results are retained",
+      "optimizer_steps_per_update_per_network": 24,
+      "status": "selected_not_trained",
+      "performance": null
+    }
+  ],
+  "priority_basis": "C01/C06/C04 first: a hypothesis-driven check of less disruptive continued updates, not a proven ranking",
+  "limits": [
+    "Most source sweeps are continuous-control/robotics or Atari; values are transferable search candidates, not validated Seongsan settings",
+    "Single-factor screening can miss interactions; C09/C10 are local combination candidates, and further joint tuning may be necessary",
+    "Current observation/control/rule-check consistency issues are not resolved merely by choosing these settings"
+  ],
+  "round": 8,
+  "selection_rule": "Nearest untried combinations in the fixed literature-backed grid, not a claim of optimal settings"
+}

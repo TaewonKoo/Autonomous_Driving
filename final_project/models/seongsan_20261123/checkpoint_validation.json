@@ -1,0 +1,50 @@
+{
+  "validation_scope": "load3 published checkpoint bytes with packaged Policy implementation; compare200 inputs, PPO profile and training seed/steps",
+  "checks": [
+    {
+      "file": "seongsan_ppo_r06c03_seed24.pt",
+      "strict_state_dict_load": true,
+      "checkpoint_profile_matches_export": true,
+      "input_shape": [
+        200
+      ],
+      "action_count": 9,
+      "steps": 3502080,
+      "sha256": "b1d4dae3aead91f5a010341566aa6697d2529ea6665dd3c346d4088e9d85888b"
+    },
+    {
+      "file": "seongsan_ppo_r08c01_seed24.pt",
+      "strict_state_dict_load": true,
+      "checkpoint_profile_matches_export": true,
+      "input_shape": [
+        200
+      ],
+      "action_count": 9,
+      "steps": 3502080,
+      "sha256": "f5b89296755eb11104ae8cdf69e7107ddf15dbd01c58095756b8483266f17f53"
+    },
+    {
+      "file": "seongsan_ppo_r08c05_seed25.pt",
+      "strict_state_dict_load": true,
+      "checkpoint_profile_matches_export": true,
+      "input_shape": [
+        200
+      ],
+      "action_count": 9,
+      "steps": 3502080,
+      "sha256": "f516f958e02dc44133c1014356a41e589d5befb2e2c834a6bf4f7226b04896a2"
+    }
+  ],
+  "environment_observed_now": {
+    "python": "3.11.17 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:16:54) [MSC v.1942 64 bit (AMD64)]",
+    "package_versions": {
+      "torch": "2.14.1+cu126",
+      "numpy": "2.4.6",
+      "traci": "1.27.1",
+      "sumolib": "1.27.1",
+      "gymnasium": "1.4.0",
+      "libsumo": "1.27.1"
+    }
+  },
+  "note": "Current environment versions are diagnostics; historical run config records torch2.14.1+cu126. No simulator evaluation or training was performed."
+}

@@ -1,0 +1,58 @@
+{
+  "verified_at": "2026-11-23T20:33:52+09:00",
+  "training_reward_changed": false,
+  "sources": {
+    "Isele2018": {
+      "url": "https://arxiv.org/pdf/1705.01196",
+      "location": "SectionIII, reward paragraph",
+      "original": {
+        "success": 1,
+        "collision": -10,
+        "step_cost": -0.01
+      },
+      "adopted": "Only success+1 and collision-10; original step cost-0.01 not used"
+    },
+    "Zhu2021v2": {
+      "url": "https://arxiv.org/pdf/2101.05372v2",
+      "location": "Equations23-30; TableIII; AppendixA",
+      "adopted_coefficients": {
+        "c_obj": -0.001,
+        "c_time": 5,
+        "c_vel_1": -0.002,
+        "c_tfc_1": -0.25,
+        "c_tfc_3": -0.02
+      },
+      "original_reward_clip": [
+        -1,
+        1
+      ],
+      "omitted_components": [
+        "fuel",
+        "battery",
+        "longitudinal jerk",
+        "missed-green branch",
+        "total reward clipping"
+      ],
+      "time_scaling_note": "Equation24 has c_obj*(fuel_rate+c_time) without explicit dt; multiplying the time component alone bydt=.2 is the Seongsan transfer design, not a verbatim original reward."
+    }
+  },
+  "active_runtime": {
+    "time_per_step": -0.001,
+    "dt_seconds": 0.2,
+    "collision": -10,
+    "red_violation": "-.25-.02*actual_speed_m_s",
+    "success_or_cleared_junction": 1,
+    "first_commanded_stop_subtask": 1,
+    "overspeed": "-.002*max(0,actual_speed-pre_step_limit), only on nonfailure full-route steps",
+    "total_reward_clipping": false
+  },
+  "local_design": [
+    "Repeat success+1 at cleared junctions on full course",
+    "Add once-per-node mandatory-stop subtask+1",
+    "Applydt=.2 to time term alone",
+    "Red/stop/route failure termination definitions",
+    "No additional stop-violation, route-failure or timeout penalty",
+    "Combine selected components from different tasks; not whole-paper replication"
+  ],
+  "evaluation_vs_training": "Collision<5% is an acceptance/selection threshold, not an explicit constraint in the PPO reward objective."
+}

@@ -1,0 +1,69 @@
+{
+  "model": "R06C03",
+  "training_seed": 24,
+  "checkpoint_file": "seongsan_ppo_r06c03_seed24.pt",
+  "checkpoint_sha256": "b1d4dae3aead91f5a010341566aa6697d2529ea6665dd3c346d4088e9d85888b",
+  "classification": "여러 문헌의 구성요소를 조합한 기존 성산 PPO; Driver Dojo 단독 재현 모델 아님",
+  "learning": {
+    "learning_rate": 3e-05,
+    "learning_rate_schedule": "constant",
+    "clip": 0.3,
+    "epochs": 3,
+    "minibatch_size": 64,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "total_samples_per_update": 2048,
+    "worker_count": 4,
+    "samples_per_worker": 512,
+    "adam_epsilon": 1e-08,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "entropy_bonus": 0.0,
+    "advantage_normalization": true,
+    "value_loss": "separate optimizer, MSE, no value clipping",
+    "gradient_clipping": false
+  },
+  "actual_execution": {
+    "stage": "full",
+    "traffic": 1.0,
+    "device": "cpu",
+    "workers": 4,
+    "torch": "2.14.1+cu126",
+    "numeric_correction": false,
+    "failure_time_tail": false,
+    "torch_threads_per_process": 1,
+    "parent_checkpoint_steps": 3000320,
+    "requested_target_steps": 3500320,
+    "actual_final_steps": 3502080,
+    "actual_additional_steps": 501760,
+    "initial_checkpoint_sha256": "93f963fb25048505846d73a2ebffac9aa0162c6fd68fc8657104f1666d2aa4e8",
+    "optimizer_state_resume": false,
+    "initialization": "기존 actor/critic 가중치 계승; Adam 상태는 새로 생성"
+  },
+  "shared_settings_file": "common_settings.json",
+  "input_schema_file": "observations.csv",
+  "action_schema_file": "actions.csv",
+  "evaluation_1000": {
+    "case_seed_start": 7100000,
+    "episodes": 1000,
+    "deterministic_argmax": true,
+    "counts": {
+      "complete": 647,
+      "collision": 88,
+      "red_violation": 42,
+      "stop_violation": 39,
+      "route_failure": 183,
+      "timeout": 1
+    },
+    "collision_percent": 8.8,
+    "completion_percent": 64.7,
+    "collision_strictly_below_5_percent": false,
+    "collision_wilson95_percent": [
+      7.1980997942320855,
+      10.717225104977658
+    ]
+  },
+  "recorded_config": "recorded_runs/seongsan_ppo_r06c03_seed24/config.json"
+}

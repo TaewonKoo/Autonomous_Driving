@@ -1,0 +1,16 @@
+{
+  "observed_at_kst": "2026-11-23T22:55:19+09:00",
+  "environment_observed_now": {
+    "python": "3.11.17 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:16:54) [MSC v.1942 64 bit (AMD64)]",
+    "package_versions": {
+      "torch": "2.14.1+cu126",
+      "numpy": "2.4.6",
+      "traci": "1.27.1",
+      "sumolib": "1.27.1",
+      "gymnasium": "1.4.0",
+      "libsumo": "1.27.1"
+    }
+  },
+  "historical_training_torch": "2.14.1+cu126",
+  "note": "Package versions other than the recorded training torch are measured at packaging time, not newly inferred historical settings."
+}

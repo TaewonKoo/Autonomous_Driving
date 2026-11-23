@@ -1,0 +1,367 @@
+{
+  "created_at_kst": "2026-11-23T22:55:19+09:00",
+  "branch": "seongsan-models-20261123",
+  "model_weights_changed": false,
+  "models": [
+    {
+      "file": "seongsan_ppo_r08c05_seed25.pt",
+      "sha256": "f516f958e02dc44133c1014356a41e589d5befb2e2c834a6bf4f7226b04896a2"
+    },
+    {
+      "file": "seongsan_ppo_r06c03_seed24.pt",
+      "sha256": "b1d4dae3aead91f5a010341566aa6697d2529ea6665dd3c346d4088e9d85888b"
+    },
+    {
+      "file": "seongsan_ppo_r08c01_seed24.pt",
+      "sha256": "f5b89296755eb11104ae8cdf69e7107ddf15dbd01c58095756b8483266f17f53"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 81,
+      "sha256": "1d0ae1de9a11cb85dd478ddceb39e7d17053e3f091260b403b3506e7de442eb0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 46,
+      "sha256": "ea9645b9412c58e7551a51c22c59b43aa3fcb15b184a97410517a3eb49415f53"
+    },
+    {
+      "path": "actions.csv",
+      "bytes": 181,
+      "sha256": "4adb38203e821fc51d8de03cf751322dd36fb3fdb3704b9158146fc8f826a864"
+    },
+    {
+      "path": "checkpoint_validation.json",
+      "bytes": 1693,
+      "sha256": "a6e382d82adc42422768cf3e7708c452c31657aa4b677f246528259621b23677"
+    },
+    {
+      "path": "common_settings.json",
+      "bytes": 15056,
+      "sha256": "7408f29f81586029b6fcd7558fa9a3f97632a036c1956ef08433121bee267c3b"
+    },
+    {
+      "path": "evaluate_models.py",
+      "bytes": 9306,
+      "sha256": "d71d901904a531ee5b58dc79c08871c6ac69a9b8e8802a5f714db3fe33e19c51"
+    },
+    {
+      "path": "EVALUATION.md",
+      "bytes": 5404,
+      "sha256": "efcf212b33941e4499894eb3410968294a7c394ce28a18fb8bdcb454671aaa7e"
+    },
+    {
+      "path": "evaluation_validation.json",
+      "bytes": 812,
+      "sha256": "fafa9bf26ae29352b35b195cbb08b7fce19f2450b0dde002db7030fa996545e2"
+    },
+    {
+      "path": "implementation/maps/seongsan/generated/seongsan.net.xml",
+      "bytes": 165409,
+      "sha256": "bb988192d006198774bea20370d859d313b2597910af6dcc58bee1cdebf2d819"
+    },
+    {
+      "path": "implementation/maps/seongsan/generated/seongsan.rou.xml",
+      "bytes": 18305,
+      "sha256": "0a18d2f95aa13007e5298ecf236d89e05ae19f5ea74582ea683faeadfdc391a5"
+    },
+    {
+      "path": "implementation/paper_training/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "implementation/paper_training/agents.py",
+      "bytes": 14484,
+      "sha256": "bd0bccbe5200a1b71d7168e6c4bddc5ddb84e0c80d1b4eaf9df92ba7e0681109"
+    },
+    {
+      "path": "implementation/paper_training/candidate_settings.py",
+      "bytes": 2602,
+      "sha256": "400b208910766fb91adfdd78b3f50cf1bcf66248c667c7ace043cc6e3d3aa09c"
+    },
+    {
+      "path": "implementation/paper_training/environments.py",
+      "bytes": 23744,
+      "sha256": "51ddb13ac083fe4e38c518d309f434038c0cabb64d026a65f0d5c80f96232c1a"
+    },
+    {
+      "path": "implementation/paper_training/observed_driving.py",
+      "bytes": 36669,
+      "sha256": "e3e5382b8e11355350e9d2fd2dccd015a8ded0b7be7943a6e0739bdea755b1d2"
+    },
+    {
+      "path": "implementation/paper_training/profiles.py",
+      "bytes": 5885,
+      "sha256": "a8f0ac68396defc7125b4e8ce66ad01d72c6faf51ce95ffc1b6039b14325a211"
+    },
+    {
+      "path": "implementation/README.md",
+      "bytes": 1415,
+      "sha256": "8aee5dabb25cd8703618b9f76451d3f3a38e381671e10160fb01eeff78e22e12"
+    },
+    {
+      "path": "implementation/SOURCE_HASHES.json",
+      "bytes": 2475,
+      "sha256": "36aa3d686d802eccbb55002b26f3a6e234ee735eb289c4884e921bbd4147fe20"
+    },
+    {
+      "path": "implementation/train_observed_driving.py",
+      "bytes": 29659,
+      "sha256": "22c70d067af423538966d2799dba17e76d5b6c2e2b645ad13b536facabf9bfaa"
+    },
+    {
+      "path": "implementation/utils/__init__.py",
+      "bytes": 604,
+      "sha256": "c19fbdc40a9db7efb66070bbc61feea1014e1248d75489cd45b6f24917e33dd9"
+    },
+    {
+      "path": "implementation/utils/networks.py",
+      "bytes": 13946,
+      "sha256": "c8abb8344409e926dcd67c686497bbf1778335a8259416167e76536e4ad95d69"
+    },
+    {
+      "path": "observations.csv",
+      "bytes": 40235,
+      "sha256": "54989cb742c2da3b550c5e760c1ce1af5837f6b92b582ba271144fd7b8200192"
+    },
+    {
+      "path": "paper_value_locations.json",
+      "bytes": 20048,
+      "sha256": "0c13968054aab8e1c2a6ef8f07a5ca04d79b9a0b7732c77de04919570b594126"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6592,
+      "sha256": "b8b6a76d4cffbf58deb552bc38be16e671caccd3433bc33e59184a4ac8bd7bd9"
+    },
+    {
+      "path": "recorded_runs/acceptance_criteria.json",
+      "bytes": 1190,
+      "sha256": "bdf7642b7b21fbddd6893462f65bddf9c11382e4ff0e33ec68f87fb0a697ea11"
+    },
+    {
+      "path": "recorded_runs/parent_training_lineage.json",
+      "bytes": 3114,
+      "sha256": "e5e86549230f5c13a831df7ccd2aa076a46a78eb66211ac33bc45c230ced554a"
+    },
+    {
+      "path": "recorded_runs/RECORD_METADATA.json",
+      "bytes": 5099,
+      "sha256": "7b30fc21fa78695c6f65c79561c74ed31534a663a0e5d8692592170710c9fa81"
+    },
+    {
+      "path": "recorded_runs/round06_manifest.json",
+      "bytes": 21780,
+      "sha256": "ef82f3f0b291a3e90c6988191fe35bf879e3554d812fe5e284fa17235e9a5abc"
+    },
+    {
+      "path": "recorded_runs/round08_manifest.json",
+      "bytes": 22109,
+      "sha256": "c33059908fbe66f1de950c82aa397b684d51394c31d6457647cfc97ba0dc3d4a"
+    },
+    {
+      "path": "recorded_runs/search_contract.json",
+      "bytes": 2342,
+      "sha256": "5d00373f202c882f354c1c862f3fc45231b1062e96841d3e7b575223f2ca02c8"
+    },
+    {
+      "path": "recorded_runs/seongsan_ppo_r06c03_seed24/completed.json",
+      "bytes": 161,
+      "sha256": "f5b01347926986c994069848ba39a28416627a71c72342d793281de349adeeda"
+    },
+    {
+      "path": "recorded_runs/seongsan_ppo_r06c03_seed24/config.json",
+      "bytes": 20734,
+      "sha256": "eab52786b863bcc1c424e57bcd632b10f4f7a6636984959ba7544f43bcd2d173"
+    },
+    {
+      "path": "recorded_runs/seongsan_ppo_r08c01_seed24/completed.json",
+      "bytes": 161,
+      "sha256": "559405d50a11deffe48a74c787f41aaebce8816794818ca16ba1b27fa036d76f"
+    },
+    {
+      "path": "recorded_runs/seongsan_ppo_r08c01_seed24/config.json",
+      "bytes": 20810,
+      "sha256": "9bc4931967dfa563c956287ce1bdd0d8a4190d879674f26045410786fa4b6d5f"
+    },
+    {
+      "path": "recorded_runs/seongsan_ppo_r08c05_seed25/completed.json",
+      "bytes": 161,
+      "sha256": "25a43192b953934709d715a09b463e529d277ee2b2a7943d6751632dbec38145"
+    },
+    {
+      "path": "recorded_runs/seongsan_ppo_r08c05_seed25/config.json",
+      "bytes": 20810,
+      "sha256": "100796d81c9be98c06fe42eed2fe57bda8324728cb2bd8585d741a009913b96a"
+    },
+    {
+      "path": "reference_evaluations/seongsan_ppo_r06c03_seed24_development100.json",
+      "bytes": 70145,
+      "sha256": "4b35cf152e8e5f389149a9bb27b8c78367ebe70bc05028676aa81ecab68613b5"
+    },
+    {
+      "path": "reference_evaluations/seongsan_ppo_r08c01_seed24_development100.json",
+      "bytes": 70573,
+      "sha256": "0310c90968585f4e8fd4de5e3373f9274b86f4ce8b5b51769c4812d737e39a34"
+    },
+    {
+      "path": "reference_evaluations/seongsan_ppo_r08c05_seed25_development100.json",
+      "bytes": 69880,
+      "sha256": "6d3a19678235eb4032c09c71168110605b5c477ba7e14f1cd0f1ea52c5bf96fd"
+    },
+    {
+      "path": "requirements-evaluation.txt",
+      "bytes": 211,
+      "sha256": "64e74f200ab539eb7e9f75e983c5674b741af0d615219370747ced8401453ded"
+    },
+    {
+      "path": "reward_source_verification.json",
+      "bytes": 2083,
+      "sha256": "52b1cbc69bdd424ed7153a066e0dc2a7b830b7a86aa7f66ffed398ca04f3fe4d"
+    },
+    {
+      "path": "runtime_environment.json",
+      "bytes": 601,
+      "sha256": "f0e8249aa64502da4e633638e7696b2293ae8f9c9c81fdfac66810fed2958c3d"
+    },
+    {
+      "path": "seongsan_ppo_r06c03_seed24.pt",
+      "bytes": 159295,
+      "sha256": "b1d4dae3aead91f5a010341566aa6697d2529ea6665dd3c346d4088e9d85888b"
+    },
+    {
+      "path": "seongsan_ppo_r06c03_seed24.settings.json",
+      "bytes": 2228,
+      "sha256": "68a08fdb6684d86e1f54ee6220955773154990eb37ddd0213f9ffa0372f628be"
+    },
+    {
+      "path": "seongsan_ppo_r08c01_seed24.pt",
+      "bytes": 159295,
+      "sha256": "f5b89296755eb11104ae8cdf69e7107ddf15dbd01c58095756b8483266f17f53"
+    },
+    {
+      "path": "seongsan_ppo_r08c01_seed24.settings.json",
+      "bytes": 2230,
+      "sha256": "06da0d9549f77b9b9f9ec30d733d9adca158a1f4b00c6999dc46c9d8b4494612"
+    },
+    {
+      "path": "seongsan_ppo_r08c05_seed25.pt",
+      "bytes": 159295,
+      "sha256": "f516f958e02dc44133c1014356a41e589d5befb2e2c834a6bf4f7226b04896a2"
+    },
+    {
+      "path": "seongsan_ppo_r08c05_seed25.settings.json",
+      "bytes": 2228,
+      "sha256": "3fb6109efeac60403cbe6aeefb01afeac6260fb1402824661edb69a1b23335a1"
+    },
+    {
+      "path": "seongsan_settings.xlsx",
+      "bytes": 27313,
+      "sha256": "daa61e90f020f3d31b011ad7a3f1bf32a36ef6140395f0833a2f67c4801a3613"
+    }
+  ],
+  "source_records": [
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c05_seed25/config.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C05_seed25/attempt_01/config.json",
+      "original_sha256": "414fa897da6aa7944427bbc6c312f4144befa20e4ee75f935790272ba73b2b30",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c05_seed25/completed.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C05_seed25/attempt_01/completed.json",
+      "original_sha256": "dc61870b95b809a8fd04cc41109f44174423745d59382ccedb2b39835f29a77d",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "reference_evaluations/seongsan_ppo_r08c05_seed25_development100.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C05_seed25/attempt_01/evaluation/evaluation.json",
+      "original_sha256": "ddafe568ee6c19b5563fb6f0ba321daa1102fa9f907ba7ca9f722e28278b672e",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/round08_manifest.json",
+      "original_file": "results/ppo_search_20261123/round08/manifest.json",
+      "original_sha256": "f5d261c78d3131e331ec7aaf3c6dc2f2f94f6920831b303bd56e1cf7c5a01bff",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r06c03_seed24/config.json",
+      "original_file": "results/ppo_search_20261123/round06/runs/R06C03_seed24/attempt_01/config.json",
+      "original_sha256": "ba0464b3c2d5d7d30cc6ddc26723640ae21db51ccfb63265dbfdfa823dd9d3c8",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r06c03_seed24/completed.json",
+      "original_file": "results/ppo_search_20261123/round06/runs/R06C03_seed24/attempt_01/completed.json",
+      "original_sha256": "da66ee815da35ad4aa3d095be3491bbd664d560422e667152f3d6e986fb63284",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "reference_evaluations/seongsan_ppo_r06c03_seed24_development100.json",
+      "original_file": "results/ppo_search_20261123/round06/runs/R06C03_seed24/attempt_01/evaluation/evaluation.json",
+      "original_sha256": "42858273af8f0a7e4c0bc9b5b70115d43a28cdfcb057e3c990982ebf84fcfe30",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/round06_manifest.json",
+      "original_file": "results/ppo_search_20261123/round06/manifest.json",
+      "original_sha256": "29cc0c6a6221c6ce21e9807ad37d96c45f949fc29158ede301f463b70b9e192d",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c01_seed24/config.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C01_seed24/attempt_01/config.json",
+      "original_sha256": "15b792423744aeb4e6d0dcdf2ad5e29df761b18994e446ee92733668516fcb3b",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c01_seed24/completed.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C01_seed24/attempt_01/completed.json",
+      "original_sha256": "56b74c52e1d6aa2af45988b7039259ce564fb8ffd7d3ae047b2dba9c360d9127",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "reference_evaluations/seongsan_ppo_r08c01_seed24_development100.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C01_seed24/attempt_01/evaluation/evaluation.json",
+      "original_sha256": "7976fd107fb7085b4d9f284c382d9571032f7593454dc66aa679f73f2241fc04",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/round08_manifest.json",
+      "original_file": "results/ppo_search_20261123/round08/manifest.json",
+      "original_sha256": "f5d261c78d3131e331ec7aaf3c6dc2f2f94f6920831b303bd56e1cf7c5a01bff",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/search_contract.json",
+      "original_file": "results/ppo_search_20261123/search_contract.json",
+      "original_sha256": "6033f3c2989d44c6586929b27b85c7caae74c6e4d764a800e8bb62653886a380",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/acceptance_criteria.json",
+      "original_file": "results/ppo_search_20261123/acceptance_criteria.json",
+      "original_sha256": "c0501cbdaa25bb18e8571779351c015bf192b7fa4536b9402f58c0f1e2bdc9ef",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/parent_training_lineage.json",
+      "original_file": "results/observed_driving_20261122/run_lineage.json",
+      "original_sha256": "b936b05d7fa66ef2ed14b22e82f146c6598f4a1130e1b986f5bc83f9c8d3898a",
+      "path_prefix_replaced": true
+    }
+  ],
+  "checks": {
+    "three_checkpoint_hashes_match_run_and_evaluation": true,
+    "all200_observation_names_match": true,
+    "all3_models_share_reward_and_dynamics": true,
+    "core_source_hashes_match": true,
+    "map_hashes_match_evaluation": true,
+    "excel_row_counts_match": true
+  },
+  "scope": "configuration, source documentation and portable evaluation wrapper; no training, model-weight or existing project-code changes"
+}

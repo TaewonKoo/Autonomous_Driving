@@ -1,0 +1,7 @@
+# Evaluation only. Versions match the recorded local evaluation environment.
+# CPU inference; the torch CUDA build suffix need not match.
+numpy==2.4.6
+torch==2.14.1
+libsumo==1.27.1
+traci==1.27.1
+sumolib==1.27.1

@@ -1,0 +1,46 @@
+{
+  "train_observed_driving.py": {
+    "sha256": "22c70d067af423538966d2799dba17e76d5b6c2e2b645ad13b536facabf9bfaa",
+    "record": "frozen search implementation; trainer includes recorded I/O-only checkpoint-retry fix"
+  },
+  "paper_training/candidate_settings.py": {
+    "sha256": "400b208910766fb91adfdd78b3f50cf1bcf66248c667c7ace043cc6e3d3aa09c",
+    "record": "frozen search implementation; trainer includes recorded I/O-only checkpoint-retry fix"
+  },
+  "paper_training/observed_driving.py": {
+    "sha256": "e3e5382b8e11355350e9d2fd2dccd015a8ded0b7be7943a6e0739bdea755b1d2",
+    "record": "frozen search implementation; trainer includes recorded I/O-only checkpoint-retry fix"
+  },
+  "paper_training/agents.py": {
+    "sha256": "bd0bccbe5200a1b71d7168e6c4bddc5ddb84e0c80d1b4eaf9df92ba7e0681109",
+    "record": "frozen search implementation; trainer includes recorded I/O-only checkpoint-retry fix"
+  },
+  "paper_training/profiles.py": {
+    "sha256": "a8f0ac68396defc7125b4e8ce66ad01d72c6faf51ce95ffc1b6039b14325a211",
+    "record": "frozen search implementation; trainer includes recorded I/O-only checkpoint-retry fix"
+  },
+  "utils/networks.py": {
+    "sha256": "c8abb8344409e926dcd67c686497bbf1778335a8259416167e76536e4ad95d69",
+    "record": "frozen search implementation; trainer includes recorded I/O-only checkpoint-retry fix"
+  },
+  "paper_training/environments.py": {
+    "sha256": "51ddb13ac083fe4e38c518d309f434038c0cabb64d026a65f0d5c80f96232c1a",
+    "record": "current import dependency; not individually frozen in the original six-file source manifest"
+  },
+  "paper_training/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "record": "current import dependency; not individually frozen in the original six-file source manifest"
+  },
+  "utils/__init__.py": {
+    "sha256": "c19fbdc40a9db7efb66070bbc61feea1014e1248d75489cd45b6f24917e33dd9",
+    "record": "current import dependency; not individually frozen in the original six-file source manifest"
+  },
+  "maps/seongsan/generated/seongsan.net.xml": {
+    "sha256": "bb988192d006198774bea20370d859d313b2597910af6dcc58bee1cdebf2d819",
+    "record": "hash matches frozen1000-case evaluation manifest"
+  },
+  "maps/seongsan/generated/seongsan.rou.xml": {
+    "sha256": "0a18d2f95aa13007e5298ecf236d89e05ae19f5ea74582ea683faeadfdc391a5",
+    "record": "hash matches frozen1000-case evaluation manifest"
+  }
+}

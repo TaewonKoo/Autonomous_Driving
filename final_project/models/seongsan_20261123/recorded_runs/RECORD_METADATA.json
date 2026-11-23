@@ -1,0 +1,95 @@
+{
+  "records": [
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c05_seed25/config.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C05_seed25/attempt_01/config.json",
+      "original_sha256": "414fa897da6aa7944427bbc6c312f4144befa20e4ee75f935790272ba73b2b30",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c05_seed25/completed.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C05_seed25/attempt_01/completed.json",
+      "original_sha256": "dc61870b95b809a8fd04cc41109f44174423745d59382ccedb2b39835f29a77d",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "reference_evaluations/seongsan_ppo_r08c05_seed25_development100.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C05_seed25/attempt_01/evaluation/evaluation.json",
+      "original_sha256": "ddafe568ee6c19b5563fb6f0ba321daa1102fa9f907ba7ca9f722e28278b672e",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/round08_manifest.json",
+      "original_file": "results/ppo_search_20261123/round08/manifest.json",
+      "original_sha256": "f5d261c78d3131e331ec7aaf3c6dc2f2f94f6920831b303bd56e1cf7c5a01bff",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r06c03_seed24/config.json",
+      "original_file": "results/ppo_search_20261123/round06/runs/R06C03_seed24/attempt_01/config.json",
+      "original_sha256": "ba0464b3c2d5d7d30cc6ddc26723640ae21db51ccfb63265dbfdfa823dd9d3c8",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r06c03_seed24/completed.json",
+      "original_file": "results/ppo_search_20261123/round06/runs/R06C03_seed24/attempt_01/completed.json",
+      "original_sha256": "da66ee815da35ad4aa3d095be3491bbd664d560422e667152f3d6e986fb63284",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "reference_evaluations/seongsan_ppo_r06c03_seed24_development100.json",
+      "original_file": "results/ppo_search_20261123/round06/runs/R06C03_seed24/attempt_01/evaluation/evaluation.json",
+      "original_sha256": "42858273af8f0a7e4c0bc9b5b70115d43a28cdfcb057e3c990982ebf84fcfe30",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/round06_manifest.json",
+      "original_file": "results/ppo_search_20261123/round06/manifest.json",
+      "original_sha256": "29cc0c6a6221c6ce21e9807ad37d96c45f949fc29158ede301f463b70b9e192d",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c01_seed24/config.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C01_seed24/attempt_01/config.json",
+      "original_sha256": "15b792423744aeb4e6d0dcdf2ad5e29df761b18994e446ee92733668516fcb3b",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/seongsan_ppo_r08c01_seed24/completed.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C01_seed24/attempt_01/completed.json",
+      "original_sha256": "56b74c52e1d6aa2af45988b7039259ce564fb8ffd7d3ae047b2dba9c360d9127",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "reference_evaluations/seongsan_ppo_r08c01_seed24_development100.json",
+      "original_file": "results/ppo_search_20261123/round08/runs/R08C01_seed24/attempt_01/evaluation/evaluation.json",
+      "original_sha256": "7976fd107fb7085b4d9f284c382d9571032f7593454dc66aa679f73f2241fc04",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/round08_manifest.json",
+      "original_file": "results/ppo_search_20261123/round08/manifest.json",
+      "original_sha256": "f5d261c78d3131e331ec7aaf3c6dc2f2f94f6920831b303bd56e1cf7c5a01bff",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/search_contract.json",
+      "original_file": "results/ppo_search_20261123/search_contract.json",
+      "original_sha256": "6033f3c2989d44c6586929b27b85c7caae74c6e4d764a800e8bb62653886a380",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/acceptance_criteria.json",
+      "original_file": "results/ppo_search_20261123/acceptance_criteria.json",
+      "original_sha256": "c0501cbdaa25bb18e8571779351c015bf192b7fa4536b9402f58c0f1e2bdc9ef",
+      "path_prefix_replaced": true
+    },
+    {
+      "packaged_file": "recorded_runs/parent_training_lineage.json",
+      "original_file": "results/observed_driving_20261122/run_lineage.json",
+      "original_sha256": "b936b05d7fa66ef2ed14b22e82f146c6598f4a1130e1b986f5bc83f9c8d3898a",
+      "path_prefix_replaced": true
+    }
+  ],
+  "note": "Machine-specific project prefixes are replaced with <PROJECT>; numeric values and original field structure are preserved. Original file hashes refer to pre-replacement bytes. Parent lineage includes historical branches, not all ancestors of these3 models."
+}

@@ -1,0 +1,47 @@
+{
+  "scope": "Learning-settings-only search; task, reward, model input/action and all physical settings fixed",
+  "round_size": 10,
+  "training_seeds": [
+    23,
+    24,
+    25
+  ],
+  "additional_steps_each_requested": 500000,
+  "additional_steps_each_actual": 501760,
+  "parallel_jobs": 2,
+  "workers_each": 4,
+  "selection": "Individual checkpoint collision-first gate: development collision rate <5%, then maximize completion among passing models; other incident metrics are tie breakers. Configuration means are context, not additional eligibility gates. No minimum completion or red/stop violation gates. With none passing, report no accepted model; original weights remain a reference only. New rounds center on the lowest-collision configuration if none passes.",
+  "confirmation": "Freeze choice before separate100-case confirmation; at most4 collisions passes, 5 fails. No other mandatory performance thresholds. Never re-test identical actor weights on fresh sets to fish for a pass.",
+  "repeat": "On unmet user criterion, declare up to10 untried neighboring configurations from the fixed finite space before next training. Stop with unmet status if the space is exhausted. Do not silently change reward/model/action definitions.",
+  "search_axes": {
+    "learning_rate": [
+      3e-05,
+      0.0001,
+      0.0003
+    ],
+    "learning_rate_schedule": [
+      "constant",
+      "linear_to_zero"
+    ],
+    "clip": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "epochs": [
+      3,
+      10
+    ],
+    "minibatch_size": [
+      64,
+      128,
+      256
+    ]
+  },
+  "space_size_including_control": 108,
+  "source": "Scalar values from frozen S1/S2/S3 references. Restricting ranges, ordering, budgets and selection are local experiment design.",
+  "best_model_claim": "No model is accepted unless collision gates and separately recorded final criteria pass. A completion leader is not an accepted model.",
+  "reproducibility_scope": "Same declared seeds and starting weights do not guarantee bitwise-identical multiprocessing rollout assignment/order. Cross-run single-seed differences are not attributed to a tuning parameter without the current matched protocol and repeats.",
+  "selection_protocol_version": "collision_gate_v2",
+  "criteria_changed_at": "2026-11-23T17:47:15+09:00"
+}

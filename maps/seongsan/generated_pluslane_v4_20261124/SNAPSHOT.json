@@ -1,0 +1,11 @@
+{
+ "snapshot_of": "maps/seongsan/generated with road priorities restored (pre-widening lane classes)",
+ "taken_at": "2026-11-24T11:10:49",
+ "files": {
+  "seongsan.add.xml": "93714dfee9d39ff502b8a0877ed2f9824dec0f80bc6c6d74ebf2d3fc6018bd40",
+  "seongsan.gui.xml": "6992f3dc6548c75314a485a7994464055036732fa5381ee17180b9ca6bd0192b",
+  "seongsan.net.xml": "572ee3390329c2c67697cf02f447dbd33a743a4071565debf3fd1ad37a257778",
+  "seongsan.rou.xml": "078129b2b6dd2622c5bab7db12617df037f0a8f31be79a77ced247241e20cf98",
+  "seongsan.sumocfg": "688aa847c478267a63b51fd85806c696669c4ba0ab4027e5ae78482588983e9f"
+ }
+}

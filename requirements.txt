@@ -1,0 +1,9 @@
+numpy
+torch
+gymnasium
+traci
+sumolib
+shapely>=2.1
+tensorboard
+libsumo==1.27.1
+eclipse-sumo==1.27.1

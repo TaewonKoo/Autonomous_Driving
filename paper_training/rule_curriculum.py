@@ -161,7 +161,7 @@ class RuleCurriculumDriving(ObservedDriving):
 
     def __init__(self, output, seed=23, task="signal", traffic=0., signal_seconds=None, reward="base", lane_change_penalty=0., roach_max_speed=None, route_obs="lane", signal_obs="color_time",
                  route_lookahead=ROUTE_LOOKAHEAD, random_start_lane=False, extra_obs=False,
-                 yield_failure=False, roach_hazard_scale=1.0, stop_zone=None, blocked_seconds=None, junction_hazard=False, desired_speed="roach", speed_reward="roach", history_lags=(), signal_aware=False, unsafe_lane_change_penalty=0., idle_penalty=0., visibility=None, input_names=None, signal_next_only=False, yield_approach_speed=0., **kwargs):
+                 yield_failure=False, roach_hazard_scale=1.0, stop_zone=None, blocked_seconds=None, junction_hazard=False, desired_speed="roach", speed_reward="roach", history_lags=(), signal_aware=False, unsafe_lane_change_penalty=0., idle_penalty=0., visibility=None, input_names=None, signal_next_only=False, yield_approach_speed=0., fog_speed_cap=False, fog_yield_scale=False, stop_reward_floor=0., collision_penalty=0., **kwargs):
         # "stop@edgeA+edgeB" / "junction@edge": practise only the junction(s) at the end of these route edges.
         task, _, focus = task.partition("@")
         self.focus_edges = set(focus.split("+")) if focus else set()
@@ -244,6 +244,15 @@ class RuleCurriculumDriving(ObservedDriving):
         # map knowledge (route, STOP/yield control, speed limit) and the ego's own state are unaffected.
         # Outcomes and rewards always use the true state.
         self.visibility = float(visibility) if visibility else None
+        # Fog speed (own design, reward only): see idm_desired_speed.
+        self.fog_speed_cap = bool(fog_speed_cap)
+        self.fog_yield_scale = bool(fog_yield_scale)
+        # Own design (reward only): when the desired speed is ~0 (STOP line, queue), divide the speed error by this
+        # floor instead of 2 m/s, so creeping at 0.3-2 m/s is no longer scored almost like a full stop.
+        self.stop_reward_floor = float(stop_reward_floor or 0.)
+        # Collision penalty (own design, reward only): a collision costs this instead of the Driver Dojo failure -10
+        # (other failures keep -10); 0 = off.
+        self.collision_penalty = float(collision_penalty or 0.)
         self._fog_obs = False
         # Roach's hazard distances were tuned for its 6 m/s cruise. With a faster cruise, scale them by
         # v_max/6 so the following gap keeps Roach's time headway (stop-line offsets stay 5 m).
@@ -285,10 +294,18 @@ class RuleCurriculumDriving(ObservedDriving):
                             if min(limit(self.full_route[i]), limit(self.full_route[i + 1])) < self.s.speed - 1e-6]
         # Reduced input set (weight-preserving pruning): compute the full vector, give the policy only these inputs.
         self._input_idx = None
+        # Fog model input (own design): "visibility" = current visibility (min(vis, 200 m) / 200 m, 1 = clear),
+        # appended after the selected inputs; it is not part of the full observation vector.
+        self.visibility_input = bool(input_names is not None and "visibility" in input_names)
+        if self.visibility_input:
+            input_names = [n for n in input_names if n != "visibility"]
         if input_names is not None and list(input_names) != list(self.names):
             full = {n: i for i, n in enumerate(self.names)}
             self._input_idx = [full[n] for n in input_names]
             self.names = list(input_names)
+            self.obs_dim = len(self.names)
+        if self.visibility_input:
+            self.names = list(self.names) + ["visibility"]
             self.obs_dim = len(self.names)
 
     def _reset_once(self, light, distance, initial_speed, force_reload):
@@ -500,6 +517,8 @@ class RuleCurriculumDriving(ObservedDriving):
                 self.visited_route_index = max(index, self.visited_route_index)
             if failure:
                 value = self.DOJO["failure"]
+                if info["collision"] and getattr(self, "collision_penalty", 0.):
+                    value = self.collision_penalty
             elif info["success"]:
                 value = self.DOJO["goal"]
             elif subgoal:
@@ -607,7 +626,16 @@ class RuleCurriculumDriving(ObservedDriving):
             if links and links[0][5] in ("m", "g"):
                 d = self.net.getLane(v.getLaneID("ego")).getLength() - v.getLanePosition("ego")
                 va = self.yield_approach_speed
+                if getattr(self, "fog_yield_scale", False) and getattr(self, "visibility", None):
+                    # Own design (reward only): in fog, reach the yield line at half the speed that can stop within the visibility.
+                    va = min(va, .5 * math.sqrt(2. * self.IDM_B * max(self.visibility - self.LINE_MARGIN, 0.)))
                 desired = min(desired, math.sqrt(va * va + 2. * self.IDM_B * max(d - self.LINE_MARGIN, 0.)))
+        if getattr(self, "fog_speed_cap", False) and getattr(self, "visibility", None):
+            # Own design (reward only): in fog, 50 % of the posted limit when visibility <= 100 m (Korean Road Traffic
+            # Act enforcement rule art. 19(2)), and never faster than stopping within the visible distance (IDM b).
+            if self.visibility <= 100.:
+                desired = min(desired, 0.5 * self.net.getLane(v.getLaneID("ego")).getSpeed())
+            desired = min(desired, math.sqrt(2. * self.IDM_B * max(self.visibility - self.LINE_MARGIN, 0.)))
         return desired
 
     def roach_desired_speed(self):
@@ -710,7 +738,8 @@ class RuleCurriculumDriving(ObservedDriving):
         if idle:
             info["idle_penalty"] = idle
         if self.speed_reward == "relative":
-            return max(-1., 1. - abs(info["actual_speed"] - desired) / max(desired, 2.)) + idle
+            floor = self.stop_reward_floor if (getattr(self, "stop_reward_floor", 0.) and desired < .1) else 2.
+            return max(-1., 1. - abs(info["actual_speed"] - desired) / max(desired, floor)) + idle
         return 1. - abs(info["actual_speed"] - desired) / self.roach_max_speed
 
     # ---- coarse routing observation ----
@@ -755,6 +784,9 @@ class RuleCurriculumDriving(ObservedDriving):
             out = np.concatenate([out] + [self._history[-1 - lag] for lag in self.history_lags], axis=1)
         if getattr(self, "_input_idx", None) is not None:
             out = out[:, self._input_idx]
+        if getattr(self, "visibility_input", False):
+            vis = min(self.visibility, 200.) / 200. if self.visibility else 1.
+            out = np.concatenate([out, np.full((out.shape[0], 1), vis, np.float32)], axis=1)
         return out
 
     def coarse_route_features(self):

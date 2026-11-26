@@ -1,0 +1,311 @@
+{
+  "development": {
+    "teacher": {
+      "all": {
+        "n": 400,
+        "outcomes": {
+          "complete": 398,
+          "timeout": 1,
+          "collision": 1
+        },
+        "collision": 0.0025,
+        "complete": 0.995,
+        "km": 432.0310799999999
+      },
+      "1": {
+        "n": 200,
+        "outcomes": {
+          "complete": 199,
+          "timeout": 1
+        },
+        "collision": 0.0,
+        "complete": 0.995,
+        "km": 215.85671999999994
+      },
+      "1_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.42031999999998
+      },
+      "1_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 99,
+          "timeout": 1
+        },
+        "collision": 0.0,
+        "complete": 0.99,
+        "km": 107.43639999999996
+      },
+      "4": {
+        "n": 200,
+        "outcomes": {
+          "complete": 199,
+          "collision": 1
+        },
+        "collision": 0.005,
+        "complete": 0.995,
+        "km": 216.17435999999995
+      },
+      "4_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 99,
+          "collision": 1
+        },
+        "collision": 0.01,
+        "complete": 0.99,
+        "km": 107.76115999999998
+      },
+      "4_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.41319999999997
+      }
+    },
+    "student_dagger": {
+      "all": {
+        "n": 400,
+        "outcomes": {
+          "complete": 389,
+          "collision": 11
+        },
+        "collision": 0.0275,
+        "complete": 0.9725,
+        "km": 428.9280400000001
+      },
+      "1": {
+        "n": 200,
+        "outcomes": {
+          "complete": 198,
+          "collision": 2
+        },
+        "collision": 0.01,
+        "complete": 0.99,
+        "km": 214.87416000000005
+      },
+      "1_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.42456000000001
+      },
+      "1_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 98,
+          "collision": 2
+        },
+        "collision": 0.02,
+        "complete": 0.98,
+        "km": 106.44960000000002
+      },
+      "4": {
+        "n": 200,
+        "outcomes": {
+          "complete": 191,
+          "collision": 9
+        },
+        "collision": 0.045,
+        "complete": 0.955,
+        "km": 214.05388000000002
+      },
+      "4_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 97,
+          "collision": 3
+        },
+        "collision": 0.03,
+        "complete": 0.97,
+        "km": 107.45768000000002
+      },
+      "4_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 94,
+          "collision": 6
+        },
+        "collision": 0.06,
+        "complete": 0.94,
+        "km": 106.59620000000001
+      }
+    },
+    "student_opt_bc": {
+      "all": {
+        "n": 400,
+        "outcomes": {
+          "complete": 396,
+          "collision": 4
+        },
+        "collision": 0.01,
+        "complete": 0.99,
+        "km": 431.7665599999999
+      },
+      "1": {
+        "n": 200,
+        "outcomes": {
+          "complete": 199,
+          "collision": 1
+        },
+        "collision": 0.005,
+        "complete": 0.995,
+        "km": 215.91964
+      },
+      "1_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.45223999999999
+      },
+      "1_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 99,
+          "collision": 1
+        },
+        "collision": 0.01,
+        "complete": 0.99,
+        "km": 107.46739999999998
+      },
+      "4": {
+        "n": 200,
+        "outcomes": {
+          "complete": 197,
+          "collision": 3
+        },
+        "collision": 0.015,
+        "complete": 0.985,
+        "km": 215.84691999999998
+      },
+      "4_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 97,
+          "collision": 3
+        },
+        "collision": 0.03,
+        "complete": 0.97,
+        "km": 107.40176
+      },
+      "4_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.44515999999999
+      }
+    },
+    "student_opt_dagger": {
+      "all": {
+        "n": 400,
+        "outcomes": {
+          "complete": 396,
+          "collision": 4
+        },
+        "collision": 0.01,
+        "complete": 0.99,
+        "km": 432.1025999999999
+      },
+      "1": {
+        "n": 200,
+        "outcomes": {
+          "complete": 200
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 216.75707999999992
+      },
+      "1_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.37431999999998
+      },
+      "1_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 100
+        },
+        "collision": 0.0,
+        "complete": 1.0,
+        "km": 108.38275999999996
+      },
+      "4": {
+        "n": 200,
+        "outcomes": {
+          "complete": 196,
+          "collision": 4
+        },
+        "collision": 0.02,
+        "complete": 0.98,
+        "km": 215.34551999999996
+      },
+      "4_30": {
+        "n": 100,
+        "outcomes": {
+          "complete": 99,
+          "collision": 1
+        },
+        "collision": 0.01,
+        "complete": 0.99,
+        "km": 107.87859999999998
+      },
+      "4_50": {
+        "n": 100,
+        "outcomes": {
+          "complete": 97,
+          "collision": 3
+        },
+        "collision": 0.03,
+        "complete": 0.97,
+        "km": 107.46691999999997
+      }
+    }
+  },
+  "selected": {
+    "teacher": {
+      "parameters": [
+        7.311834252478278,
+        2.9249510672632337,
+        8.229787555325208,
+        8.65681040752543,
+        1.0761934888232245,
+        1.0144346618112603,
+        3.4629056915869914
+      ],
+      "sha256": null
+    },
+    "student_opt_bc": {
+      "parameters": [
+        7.311834252478278,
+        2.9249510672632337,
+        8.229787555325208,
+        8.65681040752543,
+        1.0761934888232245,
+        1.0144346618112603,
+        3.4629056915869914
+      ],
+      "sha256": "e5de39ff305184d70fb7bd9d2527e79dce5e6901c3603fe1327b28b6cf218321"
+    }
+  }
+}

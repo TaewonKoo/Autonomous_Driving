@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="ego_type" accel="2.5" decel="4.5" maxSpeed="16.666666666666668" color="1,0.12,0.08" length="4.5" minGap="2.5" speedFactor="1" speedDev="0" vClass="passenger" guiShape="passenger/sedan" />
+  <vTypeDistribution id="background">
+    <vType id="hv_krauss" carFollowModel="Krauss" probability="0.35" color="0.95,0.75,0.15" accel="2.0" decel="4.5" tau="1.8" minGap="2.5" maxSpeed="16.666666666666668" jmTimegapMinor="2.0" speedFactor="normc(0.95,0.08,0.75,1.0)" vClass="passenger" />
+    <vType id="hv_idm" carFollowModel="IDM" probability="0.3" color="0.1,0.65,0.9" accel="2.0" decel="4.5" tau="1.8" minGap="2.5" maxSpeed="16.666666666666668" jmTimegapMinor="2.0" speedFactor="normc(0.95,0.08,0.75,1.0)" vClass="passenger" />
+    <vType id="hv_eidm" carFollowModel="EIDM" probability="0.2" color="0.25,0.75,0.4" accel="2.0" decel="4.5" tau="1.8" minGap="2.5" maxSpeed="16.666666666666668" jmTimegapMinor="2.0" speedFactor="normc(0.95,0.08,0.75,1.0)" vClass="passenger" />
+    <vType id="hv_acc" carFollowModel="ACC" probability="0.15" color="0.7,0.45,0.85" accel="2.0" decel="4.5" tau="1.8" minGap="2.5" maxSpeed="16.666666666666668" jmTimegapMinor="2.0" speedFactor="normc(0.95,0.08,0.75,1.0)" vClass="passenger" />
+  </vTypeDistribution>
+  <route id="ego_loop" edges="north_return northwest_return hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 south_rb_approach south_straight south_connector coast_south_rev coast_merge_approach_rev triangle_east_leg_rev triangle_east_upper_rev minor_coast_rev east_turn_pocket_rev east_right_slip godeungeo_road godeungeo_approach coast_turn coast_north north_return" />
+  <route id="port_north_to_port_nw" edges="boundary_north boundary_nw_rev" />
+  <route id="port_north_to_port_sw" edges="boundary_north hamabo_return start_south school_approach west_bank west_lower ring_0 boundary_sw_rev" />
+  <route id="port_north_to_port_south" edges="boundary_north hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 south_rb_approach south_straight boundary_south_rev" />
+  <route id="port_north_to_port_se" edges="boundary_north hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 ring_2 eomeong_road east_sweep minor_west triangle_west_upper triangle_west_leg coast_merge_approach coast_south boundary_se_rev" />
+  <route id="port_north_to_port_ne" edges="boundary_north northwest_return_rev north_return_rev coast_north_rev coast_turn_rev boundary_ne_rev" />
+  <route id="port_north_to_port_south_west" edges="boundary_north hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 south_rb_approach south_straight boundary_south_west_rev" />
+  <route id="port_nw_to_port_north" edges="boundary_nw boundary_north_rev" />
+  <route id="port_nw_to_port_sw" edges="boundary_nw hamabo_return start_south school_approach west_bank west_lower ring_0 boundary_sw_rev" />
+  <route id="port_nw_to_port_south" edges="boundary_nw hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 south_rb_approach south_straight boundary_south_rev" />
+  <route id="port_nw_to_port_se" edges="boundary_nw hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 ring_2 eomeong_road east_sweep minor_west triangle_west_upper triangle_west_leg coast_merge_approach coast_south boundary_se_rev" />
+  <route id="port_nw_to_port_ne" edges="boundary_nw hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 ring_2 eomeong_road east_sweep minor_west triangle_west_upper triangle_cross triangle_east_upper_rev minor_coast_rev east_turn_pocket_rev east_right_slip godeungeo_road godeungeo_approach boundary_ne_rev" />
+  <route id="port_nw_to_port_south_west" edges="boundary_nw hamabo_return start_south school_approach west_bank west_lower ring_0 ring_1 south_rb_approach south_straight boundary_south_west_rev" />
+  <route id="port_sw_to_port_north" edges="boundary_sw ring_1 ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_north_rev" />
+  <route id="port_sw_to_port_nw" edges="boundary_sw ring_1 ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_nw_rev" />
+  <route id="port_sw_to_port_south" edges="boundary_sw ring_1 south_rb_approach south_straight boundary_south_rev" />
+  <route id="port_sw_to_port_se" edges="boundary_sw ring_1 ring_2 eomeong_road east_sweep minor_west triangle_west_upper triangle_west_leg coast_merge_approach coast_south boundary_se_rev" />
+  <route id="port_sw_to_port_ne" edges="boundary_sw ring_1 ring_2 eomeong_road east_sweep main_sweep east_main east_main_north godeungeo_road godeungeo_approach boundary_ne_rev" />
+  <route id="port_sw_to_port_south_west" edges="boundary_sw ring_1 south_rb_approach south_straight boundary_south_west_rev" />
+  <route id="port_south_to_port_north" edges="boundary_south south_straight_rev south_rb_approach_rev ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_north_rev" />
+  <route id="port_south_to_port_nw" edges="boundary_south south_straight_rev south_rb_approach_rev ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_nw_rev" />
+  <route id="port_south_to_port_sw" edges="boundary_south south_straight_rev south_rb_approach_rev ring_2 ring_3 ring_0 boundary_sw_rev" />
+  <route id="port_south_to_port_se" edges="boundary_south south_connector boundary_se_rev" />
+  <route id="port_south_to_port_ne" edges="boundary_south south_connector coast_south_rev coast_merge_approach_rev triangle_east_leg_rev triangle_east_upper_rev minor_coast_rev east_turn_pocket_rev east_right_slip godeungeo_road godeungeo_approach boundary_ne_rev" />
+  <route id="port_south_to_port_south_west" edges="boundary_south boundary_south_west_rev" />
+  <route id="port_se_to_port_north" edges="boundary_se south_connector_rev south_straight_rev south_rb_approach_rev ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_north_rev" />
+  <route id="port_se_to_port_nw" edges="boundary_se coast_south_rev coast_merge_approach_rev triangle_east_leg_rev triangle_east_upper_rev minor_coast_rev east_turn_pocket_rev east_signal_approach_rev east_main_rev main_sweep_rev east_sweep_rev eomeong_road_rev ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_nw_rev" />
+  <route id="port_se_to_port_sw" edges="boundary_se coast_south_rev coast_merge_approach_rev triangle_west_leg_rev triangle_west_upper_rev minor_west_rev main_sweep east_main east_signal_approach east_turn_pocket minor_coast triangle_east_upper triangle_cross_rev triangle_west_leg coast_merge_approach coast_south south_connector_rev south_straight_rev south_rb_approach_rev ring_2 ring_3 ring_0 boundary_sw_rev" />
+  <route id="port_se_to_port_south" edges="boundary_se south_connector_rev boundary_south_rev" />
+  <route id="port_se_to_port_ne" edges="boundary_se coast_south_rev coast_merge_approach_rev triangle_west_leg_rev triangle_cross triangle_east_upper_rev minor_coast_rev east_turn_pocket_rev east_right_slip godeungeo_road godeungeo_approach boundary_ne_rev" />
+  <route id="port_se_to_port_south_west" edges="boundary_se south_connector_rev boundary_south_west_rev" />
+  <route id="port_ne_to_port_north" edges="boundary_ne coast_turn coast_north north_return northwest_return boundary_north_rev" />
+  <route id="port_ne_to_port_nw" edges="boundary_ne godeungeo_approach_rev godeungeo_road_rev east_main_north_rev east_signal_approach east_turn_pocket minor_coast triangle_east_upper triangle_cross_rev triangle_west_upper_rev minor_west_rev main_sweep east_main east_main_north godeungeo_road godeungeo_approach coast_turn coast_north north_return northwest_return boundary_nw_rev" />
+  <route id="port_ne_to_port_sw" edges="boundary_ne godeungeo_approach_rev godeungeo_road_rev east_main_north_rev east_signal_approach east_turn_pocket minor_coast triangle_top_rev minor_west_rev main_sweep east_main east_signal_approach east_turn_pocket minor_coast triangle_east_upper triangle_cross_rev triangle_west_leg coast_merge_approach coast_south south_connector_rev south_straight_rev south_rb_approach_rev ring_2 ring_3 ring_0 boundary_sw_rev" />
+  <route id="port_ne_to_port_south" edges="boundary_ne godeungeo_approach_rev godeungeo_road_rev east_main_north_rev east_signal_approach east_turn_pocket minor_coast triangle_east_upper triangle_cross_rev triangle_west_leg coast_merge_approach coast_south south_connector_rev boundary_south_rev" />
+  <route id="port_ne_to_port_se" edges="boundary_ne godeungeo_approach_rev godeungeo_road_rev east_main_north_rev east_signal_approach east_turn_pocket minor_coast triangle_east_upper triangle_cross_rev triangle_west_leg coast_merge_approach coast_south boundary_se_rev" />
+  <route id="port_ne_to_port_south_west" edges="boundary_ne godeungeo_approach_rev godeungeo_road_rev east_main_north_rev east_signal_approach east_turn_pocket minor_coast triangle_east_upper triangle_cross_rev triangle_west_leg coast_merge_approach coast_south south_connector_rev boundary_south_west_rev" />
+  <route id="port_south_west_to_port_north" edges="boundary_south_west south_straight_rev south_rb_approach_rev ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_north_rev" />
+  <route id="port_south_west_to_port_nw" edges="boundary_south_west south_straight_rev south_rb_approach_rev ring_2 ring_3 west_lower_rev west_bank_rev school_approach_rev start_south_rev hamabo_return_rev boundary_nw_rev" />
+  <route id="port_south_west_to_port_sw" edges="boundary_south_west south_straight_rev south_rb_approach_rev ring_2 ring_3 ring_0 boundary_sw_rev" />
+  <route id="port_south_west_to_port_south" edges="boundary_south_west boundary_south_rev" />
+  <route id="port_south_west_to_port_se" edges="boundary_south_west south_connector boundary_se_rev" />
+  <route id="port_south_west_to_port_ne" edges="boundary_south_west south_straight_rev south_rb_approach_rev ring_2 eomeong_road east_sweep main_sweep east_main east_main_north godeungeo_road godeungeo_approach boundary_ne_rev" />
+  <vehicle id="ego" type="ego_type" route="ego_loop" depart="0" departLane="0" departPos="49.30952360980996" departSpeed="0" arrivalLane="0" arrivalPos="49.30952360980996" />
+  <flow id="flow_port_north_to_port_nw" type="background" route="port_north_to_port_nw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_north_to_port_sw" type="background" route="port_north_to_port_sw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_north_to_port_south" type="background" route="port_north_to_port_south" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_north_to_port_se" type="background" route="port_north_to_port_se" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_north_to_port_ne" type="background" route="port_north_to_port_ne" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_north_to_port_south_west" type="background" route="port_north_to_port_south_west" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_nw_to_port_north" type="background" route="port_nw_to_port_north" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_nw_to_port_sw" type="background" route="port_nw_to_port_sw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_nw_to_port_south" type="background" route="port_nw_to_port_south" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_nw_to_port_se" type="background" route="port_nw_to_port_se" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_nw_to_port_ne" type="background" route="port_nw_to_port_ne" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_nw_to_port_south_west" type="background" route="port_nw_to_port_south_west" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_sw_to_port_north" type="background" route="port_sw_to_port_north" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_sw_to_port_nw" type="background" route="port_sw_to_port_nw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_sw_to_port_south" type="background" route="port_sw_to_port_south" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_sw_to_port_se" type="background" route="port_sw_to_port_se" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_sw_to_port_ne" type="background" route="port_sw_to_port_ne" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_sw_to_port_south_west" type="background" route="port_sw_to_port_south_west" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_to_port_north" type="background" route="port_south_to_port_north" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_to_port_nw" type="background" route="port_south_to_port_nw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_to_port_sw" type="background" route="port_south_to_port_sw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_to_port_se" type="background" route="port_south_to_port_se" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_to_port_ne" type="background" route="port_south_to_port_ne" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_to_port_south_west" type="background" route="port_south_to_port_south_west" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_se_to_port_north" type="background" route="port_se_to_port_north" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_se_to_port_nw" type="background" route="port_se_to_port_nw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_se_to_port_sw" type="background" route="port_se_to_port_sw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_se_to_port_south" type="background" route="port_se_to_port_south" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_se_to_port_ne" type="background" route="port_se_to_port_ne" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_se_to_port_south_west" type="background" route="port_se_to_port_south_west" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_ne_to_port_north" type="background" route="port_ne_to_port_north" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_ne_to_port_nw" type="background" route="port_ne_to_port_nw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_ne_to_port_sw" type="background" route="port_ne_to_port_sw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_ne_to_port_south" type="background" route="port_ne_to_port_south" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_ne_to_port_se" type="background" route="port_ne_to_port_se" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_ne_to_port_south_west" type="background" route="port_ne_to_port_south_west" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_west_to_port_north" type="background" route="port_south_west_to_port_north" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_west_to_port_nw" type="background" route="port_south_west_to_port_nw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_west_to_port_sw" type="background" route="port_south_west_to_port_sw" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_west_to_port_south" type="background" route="port_south_west_to_port_south" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_west_to_port_se" type="background" route="port_south_west_to_port_se" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+  <flow id="flow_port_south_west_to_port_ne" type="background" route="port_south_west_to_port_ne" begin="0" end="3600" vehsPerHour="16.666666666666668" departLane="best" departSpeed="max" />
+</routes>

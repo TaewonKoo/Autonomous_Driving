@@ -1,0 +1,62 @@
+{
+  "light": {
+    "n": 94459,
+    "clear_brake": 7086,
+    "drop": 927,
+    "extra": 768,
+    "nonbrake": 87373,
+    "eligible": 14818,
+    "leader_missed": 1606,
+    "drop_missed": 18,
+    "missed_restored": 13,
+    "drop_rate": 0.13082133784928027,
+    "drop_rate_ci": [
+      0.12147271246795296,
+      0.1401829767126137
+    ],
+    "extra_rate": 0.008789900770260836,
+    "extra_rate_ci": [
+      0.007660608019042221,
+      0.010017707107668404
+    ],
+    "restore_rate": 0.7222222222222222,
+    "restore_rate_ci": [
+      0.4444444444444444,
+      1.0
+    ]
+  },
+  "dense": {
+    "n": 94459,
+    "clear_brake": 7086,
+    "drop": 2474,
+    "extra": 1191,
+    "nonbrake": 87373,
+    "eligible": 14818,
+    "leader_missed": 7082,
+    "drop_missed": 691,
+    "missed_restored": 528,
+    "drop_rate": 0.3491391476150155,
+    "drop_rate_ci": [
+      0.33245673277373455,
+      0.36591065573647047
+    ],
+    "extra_rate": 0.013631213303881062,
+    "extra_rate_ci": [
+      0.012116592119181157,
+      0.015122915075029584
+    ],
+    "restore_rate": 0.76410998552822,
+    "restore_rate_ci": [
+      0.7042568932837422,
+      0.8198478337798898
+    ]
+  },
+  "example": {
+    "seed": 91006700,
+    "t": 333,
+    "gap": 8.560476303100586,
+    "speed": 4.800000190734863,
+    "leader_speed": 0.0
+  },
+  "eligible_example_frames": 419
+}

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<viewsettings>
+  <scheme name="seongsan">
+    <background backgroundColor="51,128,51" />
+    <edges realisticLinkRules="true" />
+    <vehicles vehicleQuality="2" />
+    <polys poly_minSize="0" poly_exaggeration="1" poly_constantSize="true" polyUseCustomLayer="false" />
+  </scheme>
+  <viewport zoom="100" x="148.115" y="10.36999999999999" angle="0" />
+  <delay value="200" />
+</viewsettings>

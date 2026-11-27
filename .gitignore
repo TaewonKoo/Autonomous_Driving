@@ -1,20 +1,7 @@
-# Local Python environments and caches
 __pycache__/
-*.py[cod]
-.venv/
-venv/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.idea/
-.DS_Store
-Thumbs.db
-
-# Local credentials and private keys
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-*.p12
-*.pfx
+*.pyc
+results/
+data/*/
+bc/outputs/
+bc/*.jsonl
+maps/seongsan/generated/netconvert.log

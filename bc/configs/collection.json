@@ -1,0 +1,27 @@
+{
+  "weather": {
+    "clear": null,
+    "light": [
+      40,
+      45,
+      29,
+      0.6
+    ],
+    "dense": [
+      20,
+      33,
+      17,
+      1.4
+    ]
+  },
+  "target_transitions": {
+    "clear": 5000000,
+    "light": 2500000,
+    "dense": 2500000
+  },
+  "traffic_multiplier": 4,
+  "logistic_scale_m": 5,
+  "latent_persistence": 0.85,
+  "sensor_seed_offset": 100000000,
+  "obs_profile_id": 3
+}

@@ -1,0 +1,34 @@
+{
+  "model": "student_opt_bc",
+  "parameters": [
+    7.311834252478278,
+    2.9249510672632337,
+    8.229787555325208,
+    8.65681040752543,
+    1.0761934888232245,
+    1.0144346618112603,
+    3.4629056915869914
+  ],
+  "sha256": "e5de39ff305184d70fb7bd9d2527e79dce5e6901c3603fe1327b28b6cf218321",
+  "static_geometry": "intersection_geometry.json",
+  "sim_dt": 0.2,
+  "speedMode": 96,
+  "laneChangeMode": 0,
+  "traffic_evaluation": [
+    1,
+    4
+  ],
+  "visual_ranges": [
+    30,
+    50
+  ],
+  "dependency_sha256": {
+    "driver_study\\intersection_geometry.json": "9a38f59dae562ef0b213d328e03cc490da243a52b280543baa35482a7ba953c1",
+    "implementation\\maps\\seongsan\\generated\\seongsan.net.xml": "0347826859ae28a5dcdbd96ac4f1b8979426d229d10cdc0bba5a078467538b9c",
+    "implementation\\maps\\seongsan\\generated\\seongsan.rou.xml": "078129b2b6dd2622c5bab7db12617df037f0a8f31be79a77ced247241e20cf98",
+    "implementation\\paper_training\\observed_driving.py": "7617d39e8181481c585d711b2d19ab0e38eab43552d5662c7df65d1320d159dd",
+    "study.py": "c79f517063d4119b8dfe6cd1894de606b59bf6906542e3ba5198e0817c9263fe",
+    "learned_driver.py": "09fecfdb9865f36dfd9cdcf220c6ffb77baee8009f9d6a491f28ca93fa06eb32",
+    "driver_map.py": "7223fc46a0383c1ee11bdee82de92c371b04011c2bd62ddf3514ca8818052af5"
+  }
+}

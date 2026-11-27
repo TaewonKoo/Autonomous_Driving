@@ -1,0 +1,151 @@
+{
+  "teacher": {
+    "all": {
+      "n": 1000,
+      "outcomes": {
+        "complete": 989,
+        "collision": 8,
+        "timeout": 2,
+        "route_failure": 1
+      },
+      "collision": 0.008,
+      "complete": 0.989,
+      "km": 1078.9799304763899
+    },
+    "1": {
+      "n": 500,
+      "outcomes": {
+        "complete": 499,
+        "timeout": 1
+      },
+      "collision": 0.0,
+      "complete": 0.998,
+      "km": 541.4616399999999
+    },
+    "1_30": {
+      "n": 250,
+      "outcomes": {
+        "complete": 250
+      },
+      "collision": 0.0,
+      "complete": 1.0,
+      "km": 271.0699199999999
+    },
+    "1_50": {
+      "n": 250,
+      "outcomes": {
+        "complete": 249,
+        "timeout": 1
+      },
+      "collision": 0.0,
+      "complete": 0.996,
+      "km": 270.3917199999999
+    },
+    "4": {
+      "n": 500,
+      "outcomes": {
+        "complete": 490,
+        "collision": 8,
+        "timeout": 1,
+        "route_failure": 1
+      },
+      "collision": 0.016,
+      "complete": 0.98,
+      "km": 537.51829047639
+    },
+    "4_30": {
+      "n": 250,
+      "outcomes": {
+        "complete": 245,
+        "collision": 4,
+        "route_failure": 1
+      },
+      "collision": 0.016,
+      "complete": 0.98,
+      "km": 269.07025047639013
+    },
+    "4_50": {
+      "n": 250,
+      "outcomes": {
+        "complete": 245,
+        "collision": 4,
+        "timeout": 1
+      },
+      "collision": 0.016,
+      "complete": 0.98,
+      "km": 268.44803999999993
+    }
+  },
+  "student_opt_bc": {
+    "all": {
+      "n": 1000,
+      "outcomes": {
+        "complete": 989,
+        "collision": 10,
+        "timeout": 1
+      },
+      "collision": 0.01,
+      "complete": 0.989,
+      "km": 1078.9435199999998
+    },
+    "1": {
+      "n": 500,
+      "outcomes": {
+        "complete": 500
+      },
+      "collision": 0.0,
+      "complete": 1.0,
+      "km": 542.2561599999999
+    },
+    "1_30": {
+      "n": 250,
+      "outcomes": {
+        "complete": 250
+      },
+      "collision": 0.0,
+      "complete": 1.0,
+      "km": 271.128
+    },
+    "1_50": {
+      "n": 250,
+      "outcomes": {
+        "complete": 250
+      },
+      "collision": 0.0,
+      "complete": 1.0,
+      "km": 271.12816
+    },
+    "4": {
+      "n": 500,
+      "outcomes": {
+        "complete": 489,
+        "collision": 10,
+        "timeout": 1
+      },
+      "collision": 0.02,
+      "complete": 0.978,
+      "km": 536.68736
+    },
+    "4_30": {
+      "n": 250,
+      "outcomes": {
+        "complete": 245,
+        "collision": 5
+      },
+      "collision": 0.02,
+      "complete": 0.98,
+      "km": 269.36848
+    },
+    "4_50": {
+      "n": 250,
+      "outcomes": {
+        "complete": 244,
+        "collision": 5,
+        "timeout": 1
+      },
+      "collision": 0.02,
+      "complete": 0.976,
+      "km": 267.3188799999999
+    }
+  }
+}

@@ -1,0 +1,8 @@
+case,n,complete,collision,stop_violation,red_violation,timeout,route_failure,leader_encounters,leader_missed,leader_median_m,red_encounters,red_missed,red_median_m,stop_encounters,stop_missed,stop_median_m,collision_averted,new_collision,paired_exact_p
+clear,100,98,2,0,0,0,0,487,0,24.2,143,67,30.0,199,0,49.3,,,
+light_base,100,91,5,4,0,0,0,481,109,17.3,142,69,29.2,197,0,27.3,0,0,1
+light_range,100,98,2,0,0,0,0,490,61,19.7,141,69,29.7,199,0,37.9,4,1,0.375
+light_noise,100,94,1,5,0,0,0,487,113,17.4,142,69,29.8,197,0,27.5,5,1,0.21875
+dense_base,100,31,39,29,1,0,0,336,164,9.8,118,72,28.1,149,6,15.8,0,0,1
+dense_range,100,87,9,4,0,0,0,483,160,14.8,139,67,29.6,192,0,27.4,35,5,1.382612026645802e-06
+dense_noise,100,25,41,33,1,0,0,319,161,10.1,114,72,27.9,144,7,16.4,8,10,0.8145294189453125
